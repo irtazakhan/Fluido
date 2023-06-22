@@ -6,19 +6,31 @@ using TMPro;
 
 public class WordManager : MonoBehaviour
 {
-    [SerializeField] Image[] inputBox;
+    [SerializeField] List<Image> inputBoxList = new List<Image>();
     [SerializeField] Button[] Buttons;
-
+    [SerializeField] Image inputBoxPrefab;
+    [SerializeField] Transform inputBoxParent;
 
     private int inputIndex;
-
+    private int correctLetters;
     public string answerText = "CASA";
+
+    private void Awake()
+    {
+        for (int i = 0; i < answerText.Length; i++)
+        {
+            Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
+            inputBoxList.Add(inputBox);
+        }
+
+        answerText = answerText.ToUpper();
+    }
 
     public void SetLetter(string c)
     {
-        if (inputIndex >= inputBox.Length) return;
+        if (inputIndex >= inputBoxList.Count) return;
 
-        inputBox[inputIndex].GetComponentInChildren<TMP_Text>().text = c.ToUpper();
+        inputBoxList[inputIndex].GetComponentInChildren<TMP_Text>().text = c.ToUpper();
         inputIndex++;
        
     }
@@ -28,32 +40,44 @@ public class WordManager : MonoBehaviour
         if (inputIndex <= 0)
             return;
         inputIndex--;
-        inputBox[inputIndex].GetComponentInChildren<TMP_Text>().text = "";
+        inputBoxList[inputIndex].GetComponentInChildren<TMP_Text>().text = "";
         
     }
 
     public void SubmitWord()
     {
-        if(inputIndex-1<inputBox.Length-1)
+        if(inputIndex-1< inputBoxList.Count-1)
         {
             Debug.Log(inputIndex + "Length Error");
             return;
         }
-        for (int i = 0; i < inputBox.Length; i++)
+        for (int i = 0; i < inputBoxList.Count; i++)
         {
-            string tmptext = inputBox[i].GetComponentInChildren<TMP_Text>().text;
+            string tmptext = inputBoxList[i].GetComponentInChildren<TMP_Text>().text;
             if (tmptext == answerText[i].ToString())
             {
-                inputBox[i].color = Color.green;
+                inputBoxList[i].color = Color.green;
+                correctLetters++;
             }
             else if(answerText.Contains(tmptext))
             {
-                inputBox[i].color = Color.yellow;
+                inputBoxList[i].color = Color.yellow;
             }
             else
             {
-                inputBox[i].color = Color.red;
+                inputBoxList[i].color = Color.red;
             }
         }
+
+        if(correctLetters==answerText.Length)
+        {
+            Debug.Log("Correct Answer");
+        }
+        else
+        {
+            
+            Debug.Log("Incorrect Answer");
+        }
+        correctLetters = 0;
     }
 }
