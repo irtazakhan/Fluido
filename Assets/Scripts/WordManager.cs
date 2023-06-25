@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class WordManager : MonoBehaviour
 {
@@ -13,10 +14,14 @@ public class WordManager : MonoBehaviour
 
     private int inputIndex;
     private int correctLetters;
-    public string answerText = "CASA";
+    public string answerText;
 
     private void Awake()
     {
+       
+        int num = PlayerPrefs.GetInt("words");
+        Debug.Log(num);
+        answerText = GameManager.words[num];
         for (int i = 0; i < answerText.Length; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
@@ -72,11 +77,16 @@ public class WordManager : MonoBehaviour
         if(correctLetters==answerText.Length)
         {
             Debug.Log("Correct Answer");
+            int num= PlayerPrefs.GetInt("words");
+            
+            PlayerPrefs.SetInt("words", num+1);
+            SceneManager.LoadScene("UI Base");
         }
         else
         {
             
             Debug.Log("Incorrect Answer");
+            SceneManager.LoadScene("wordle");
         }
         correctLetters = 0;
     }

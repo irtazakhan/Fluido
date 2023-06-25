@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/UI Base.unity
+    guid: fc146288b0c2ac743ad50dae45e40dd9
+  - enabled: 1
+    path: Assets/Scenes/Wordle.unity
+    guid: c18548c9f5f2f624da0160b80676f6a1
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 1279b5705ad4c3f4e81be5bab5ee37bb, type: 2}
