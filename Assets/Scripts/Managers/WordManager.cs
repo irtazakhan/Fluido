@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class WordManager : MonoBehaviour
 {
     [SerializeField] List<Image> inputBoxList = new List<Image>();
-    [SerializeField] Button[] Buttons;
+    [SerializeField] List<Button> buttons = new List<Button>();
     [SerializeField] Image inputBoxPrefab;
     [SerializeField] Transform inputBoxParent;
     [SerializeField] Transform historyPanel;
@@ -104,10 +104,21 @@ public class WordManager : MonoBehaviour
 
     IEnumerator InccorectAnswerRoutine()
     {
+        HighLightKeys();
         yield return new WaitForSeconds(waitingTime);
         AddWordToHistoryList();
         uiManager.OpenMainPanel();
-        //Disable words on Keyboard
+    }
+
+    private void HighLightKeys()
+    {
+        foreach (Image input in inputBoxList)
+        {
+            string text = input.GetComponentInChildren<TMP_Text>().text;
+
+            Button button= buttons.Find(x=>x.name==text);
+            button.image.color = input.color;
+        }
     }
 
     private void AddWordToHistoryList()

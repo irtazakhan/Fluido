@@ -546,11 +546,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordText: {fileID: 8595704269620696352}
+  englishDescription: {fileID: 1168387015}
+  spanishDescription: {fileID: 1314502659}
   allOptionPanel: {fileID: 1967225200}
   historyPanel: {fileID: 882609996}
   wordlePanel: {fileID: 957232412}
   analyzePanel: {fileID: 1191914468}
   genderPanel: {fileID: 819984114}
+--- !u!114 &1168387015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1395970563769617708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 8595704269620696351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1191914468 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 683536177209098764, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
@@ -561,6 +574,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
   m_PrefabInstance: {fileID: 8595704269620696351}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1314502659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6118717959624407886, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 8595704269620696351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1772473169
 GameObject:
   m_ObjectHideFlags: 0

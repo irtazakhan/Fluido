@@ -1,0 +1,40 @@
+{
+  "wordData": [
+    {
+      "No": 1,
+      "EN_Name": "House",
+      "Gender": "la",
+      "SP_Name": "Casa",
+      "Length": 4,
+      "Type": "Place Noun",
+      "EN_Definition": "a building for human habitation, especially one that consists of a ground floor and one or more upper storeys.",
+      "SP_Definition": "edificio para habitar.",
+      "Sprite": "House",
+      "Audio": "House"
+    },
+    {
+      "No": 2,
+      "EN_Name": "Shop",
+      "Gender": "la",
+      "SP_Name": "Tienda",
+      "Length": 6,
+      "Type": "Place Noun",
+      "EN_Definition": "a building or part of a building where goods or services are sold.",
+      "SP_Definition": "casa, puesto o lugar donde se venden al público artículos de comercio o servicios.",
+      "Sprite": "Shop",
+      "Audio": "Shop"
+    },
+    {
+      "No": 3,
+      "EN_Name": "School",
+      "Gender": "la",
+      "SP_Name": "Escuela",
+      "Length": 7,
+      "Type": "Place Noun",
+      "EN_Definition": "any institution at which instruction is given in a particular discipline.",
+      "SP_Definition": "establecimiento o institución donde se dan o se reciben ciertos tipos de instrucción.",
+      "Sprite": "School",
+      "Audio": "School"
+    }
+  ]
+}

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] TMP_Text wordText;
+    [SerializeField] TMP_Text englishDescription;
+    [SerializeField] TMP_Text spanishDescription;
+
     [SerializeField] GameObject allOptionPanel;
     [SerializeField] GameObject historyPanel;
     [SerializeField] GameObject wordlePanel;
@@ -15,14 +17,14 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        wordText.text = GameManager.englishWords[PlayerPrefs.GetInt("words")];
+        wordText.text = GameManager.wordsList.wordData[PlayerPrefs.GetInt("words")].EN_Name;
     }
 
     public void OpenMainPanel()
     {
         CloseAllPanel();
         allOptionPanel.SetActive(true);
-        wordText.text = GameManager.englishWords[PlayerPrefs.GetInt("words")];
+        wordText.text = GameManager.wordsList.wordData[PlayerPrefs.GetInt("words")].EN_Name;
     }
 
     public void OpenWordlePanel()
@@ -38,6 +40,9 @@ public class UIManager : MonoBehaviour
 
     public void OpenAnalyzePanel()
     {
+        int wordNumber = PlayerPrefs.GetInt("words");
+        englishDescription.text ="English Definition: " +GameManager.wordsList.wordData[wordNumber].EN_Definition;
+        spanishDescription.text = "Spanish Definition: " + GameManager.wordsList.wordData[wordNumber].SP_Definition;
         analyzePanel.SetActive(true);
     }
 

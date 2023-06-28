@@ -1,15 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
-    public static string[] spanishWords = {"Casa","Tienda","Escuela","Yo","Lugar","Hospital","Calle","Perro","Numero","Dinero"};
-    public static string[] englishWords = { "House","Store","School","I","Place","Hospital","Street","Dog","Number","Money"};
+    public static string[] spanishWords = {"Casa","Tienda","Escuela"};
+    public static string[] englishWords = { "House","Store","School"};
+
+    public static WordsList wordsList;
 
     private void Awake()
     {
-        
+        if (File.Exists(Application.dataPath + "/words.txt"))
+        {
+            string json = File.ReadAllText(Application.dataPath + "/words.txt");
+            wordsList = JsonUtility.FromJson<WordsList>(json);
+        }
+
         int numGameSession = FindObjectsOfType<GameManager>().Length;
         if (numGameSession > 1)
         {
@@ -22,13 +30,23 @@ public class GameManager : MonoBehaviour
     }
 }
 
-public class Word
+[System.Serializable]
+public class WordsList
 {
-    public string englishName;
-    public string spanishName;
-    public string gender;
-    public string englishDescription;
-    public string spanishDescription;
-    public string fileImageName;
-    public string audioFileName;
+    public List<WordData> wordData = new List<WordData>();
+}
+
+[System.Serializable]
+public class WordData
+{
+    public int No;
+    public string EN_Name;
+    public string Gender;
+    public string SP_Name;
+    public int Length;
+    public string Type;
+    public string EN_Definition;
+    public string SP_Definition;
+    public string Sprite;
+    public string Audio;
 }
