@@ -11,17 +11,19 @@ public class WordManager : MonoBehaviour
     [SerializeField] Button[] Buttons;
     [SerializeField] Image inputBoxPrefab;
     [SerializeField] Transform inputBoxParent;
+    [SerializeField] Transform historyPanel;
+    [SerializeField] float waitingTime=1f;
+    [SerializeField] UIManager uiManager;
 
     private int inputIndex;
     private int correctLetters;
     public string answerText;
 
-    private void Awake()
+    public void OnEnable()
     {
-       
         int num = PlayerPrefs.GetInt("words");
         Debug.Log(num);
-        answerText = GameManager.words[num];
+        answerText = GameManager.spanishWords[num];
         for (int i = 0; i < answerText.Length; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
@@ -76,18 +78,54 @@ public class WordManager : MonoBehaviour
 
         if(correctLetters==answerText.Length)
         {
-            Debug.Log("Correct Answer");
-            int num= PlayerPrefs.GetInt("words");
-            
+            int num= PlayerPrefs.GetInt("words");      
             PlayerPrefs.SetInt("words", num+1);
-            SceneManager.LoadScene("UI Base");
+            StartCoroutine(CorrectAnswerRoutine());         
         }
         else
-        {
-            
-            Debug.Log("Incorrect Answer");
-            SceneManager.LoadScene("wordle");
+        {          
+            StartCoroutine(InccorectAnswerRoutine());
         }
+        inputIndex = 0;
         correctLetters = 0;
+    }
+
+    IEnumerator CorrectAnswerRoutine()
+    {
+        yield return new WaitForSeconds(waitingTime);
+        AddWordToHistoryList();
+        uiManager.OpenMainPanel();
+
+        foreach (Transform child in historyPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    IEnumerator InccorectAnswerRoutine()
+    {
+        yield return new WaitForSeconds(waitingTime);
+        AddWordToHistoryList();
+        uiManager.OpenMainPanel();
+        //Disable words on Keyboard
+    }
+
+    private void AddWordToHistoryList()
+    {
+        historyPanel.GetComponent<GridLayoutGroup>().constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+        historyPanel.GetComponent<GridLayoutGroup>().constraintCount = answerText.Length;
+        for (int i = 0; i < inputBoxList.Count; i++)
+        {
+            Image inputBox = Instantiate(inputBoxPrefab, historyPanel);
+            inputBox.GetComponentInChildren<TMP_Text>().text = GetTextFromInputBox(inputBoxList[i]);
+            Destroy(inputBoxList[i].gameObject);
+        }
+        inputBoxList.Clear();
+    }
+
+    private string GetTextFromInputBox(Image inputBox)
+    {
+        string text = inputBox.GetComponentInChildren<TMP_Text>().text;
+        return text;
     }
 }
