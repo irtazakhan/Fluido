@@ -5,10 +5,11 @@ using System.IO;
 
 public class GameManager : MonoBehaviour
 {
-    public static string[] spanishWords = {"Casa","Tienda","Escuela"};
-    public static string[] englishWords = { "House","Store","School"};
-
+    #region PUBLIC VARIABLES
     public static WordsList wordsList;
+    #endregion
+
+    #region PRIVATE FUNCTIONS
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    #endregion
 }
 
 [System.Serializable]

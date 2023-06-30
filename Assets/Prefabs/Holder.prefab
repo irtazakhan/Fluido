@@ -2607,6 +2607,7 @@ GameObject:
   - component: {fileID: 4037499749386110950}
   - component: {fileID: 3639997268094923733}
   - component: {fileID: 3507404996816256517}
+  - component: {fileID: 3947450343574666025}
   m_Layer: 5
   m_Name: Gender Wheel BG
   m_TagString: Untagged
@@ -2700,6 +2701,22 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &3947450343574666025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6469584634907451221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da4ee66741a9b440b6f05493ff7146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  genderWheelImage: {fileID: 1124115123784282170}
+  maleArticleButton: {fileID: 7882732872450680282}
+  femaleArticleButton: {fileID: 4580153349832905682}
+  uiManager: {fileID: 0}
 --- !u!1 &6637073136493495810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,7 +2804,6 @@ GameObject:
   - component: {fileID: 70971785405606021}
   - component: {fileID: 3001992350989497535}
   - component: {fileID: 1457046865054401624}
-  - component: {fileID: 1784972630867620680}
   m_Layer: 5
   m_Name: Gender Image
   m_TagString: Untagged
@@ -2854,19 +2870,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1784972630867620680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6926511702861878870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7da4ee66741a9b440b6f05493ff7146d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  genderWheelImage: {fileID: 1124115123784282170}
 --- !u!1 &7178749595015137473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,19 +3125,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5461259202334769025}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenWordlePanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7322247067857382892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,7 +3361,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3766,13 +3757,13 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Top: 15
+    m_Bottom: 15
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 55, y: 55}
-  m_Spacing: {x: 28, y: 28}
+  m_Spacing: {x: 35, y: 35}
   m_Constraint: 0
   m_ConstraintCount: 4
 --- !u!114 &1781624453005863087
@@ -4295,7 +4286,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4823,31 +4814,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7686776493418765498}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenWordlePanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1784972630867620680}
-        m_TargetAssemblyTypeName: WordGenderManager, Assembly-CSharp
-        m_MethodName: CorrectOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &2800682106882362230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4856,62 +4823,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2820276980297238559}
     m_Modifications:
-    - target: {fileID: 158909194043977003, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 264988776694854288, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 348293429550920994, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 558559549252170301, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 811411250487582578, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 895499615778763832, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1064287543252299588, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1069563479795750029, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1387283485904928136, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1579939169743938256, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587635822222144201, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_Name
-      value: RemoveButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942745454810453224, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2858897721849580211, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2911460362222737313, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 3693972723058574709, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5000,78 +4911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WordlePanel
       objectReference: {fileID: 0}
-    - target: {fileID: 3970527419680093863, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341014484510936964, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5391952261097843631, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5474607639312316122, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5953687621566987563, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6041273175531073781, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6060082684918776794, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6173447663743649671, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6291985840451732968, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6605811525269828297, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770804776987645416, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
+    - target: {fileID: 6517130385584942731, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
       propertyPath: historyPanel
       value: 
       objectReference: {fileID: 1884933393599391336}
-    - target: {fileID: 7636344777635786097, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_Name
-      value: EnterButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696658859814270516, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8264996474067277387, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8351448299530436295, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8697191205922374269, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887632299602501753, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSize
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887632299602501753, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
-      propertyPath: m_fontSizeMax
-      value: 18
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

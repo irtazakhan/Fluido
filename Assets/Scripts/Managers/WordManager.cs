@@ -7,23 +7,86 @@ using UnityEngine.SceneManagement;
 
 public class WordManager : MonoBehaviour
 {
+    #region PRIVATE VARIABLES 
+
     [SerializeField] List<Image> inputBoxList = new List<Image>();
     [SerializeField] List<Button> buttons = new List<Button>();
     [SerializeField] Image inputBoxPrefab;
     [SerializeField] Transform inputBoxParent;
     [SerializeField] Transform historyPanel;
     [SerializeField] float waitingTime=1f;
+
+    [SerializeField] WordGenderManager wordGenderManager;
     [SerializeField] UIManager uiManager;
 
     private int inputIndex;
     private int correctLetters;
-    public string answerText;
+    private string answerText;
+    #endregion
+
+    #region PRIVATE FUNCTIONS
+
+    private IEnumerator CorrectAnswerRoutine()
+    {
+        yield return new WaitForSeconds(waitingTime);
+        AddWordToHistoryList();
+        uiManager.OpenMainPanel();
+        wordGenderManager.ResetGenderWheel();
+        foreach (Transform child in historyPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    private IEnumerator InccorectAnswerRoutine()
+    {
+        HighLightKeys();
+        yield return new WaitForSeconds(waitingTime);
+        AddWordToHistoryList();
+        uiManager.OpenMainPanel();
+    }
+
+    private void HighLightKeys()
+    {
+        foreach (Image input in inputBoxList)
+        {
+            string text = input.GetComponentInChildren<TMP_Text>().text;
+
+            Button button = buttons.Find(x => x.name == text);
+            button.image.color = input.color;
+        }
+    }
+
+    private void AddWordToHistoryList()
+    {
+        historyPanel.GetComponent<GridLayoutGroup>().constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+        historyPanel.GetComponent<GridLayoutGroup>().constraintCount = answerText.Length;
+        for (int i = 0; i < inputBoxList.Count; i++)
+        {
+            Image inputBox = Instantiate(inputBoxPrefab, historyPanel);
+            inputBox.GetComponentInChildren<TMP_Text>().text = GetTextFromInputBox(inputBoxList[i]);
+            inputBox.GetComponentInChildren<TMP_Text>().color = Color.black;
+            inputBox.color = inputBoxList[i].color;
+            Destroy(inputBoxList[i].gameObject);
+        }
+        inputBoxList.Clear();
+    }
+
+    private string GetTextFromInputBox(Image inputBox)
+    {
+        string text = inputBox.GetComponentInChildren<TMP_Text>().text;
+        return text;
+    }
+    #endregion
+
+    #region PUBLIC FUNCTIONS
 
     public void OnEnable()
     {
         int num = PlayerPrefs.GetInt("words");
-        Debug.Log(num);
-        answerText = GameManager.spanishWords[num];
+       
+        answerText = GameManager.wordsList.wordData[num].SP_Name;
+        Debug.Log(answerText.Length);
         for (int i = 0; i < answerText.Length; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
@@ -89,54 +152,6 @@ public class WordManager : MonoBehaviour
         inputIndex = 0;
         correctLetters = 0;
     }
+    #endregion
 
-    IEnumerator CorrectAnswerRoutine()
-    {
-        yield return new WaitForSeconds(waitingTime);
-        AddWordToHistoryList();
-        uiManager.OpenMainPanel();
-
-        foreach (Transform child in historyPanel.transform)
-        {
-            Destroy(child.gameObject);
-        }
-    }
-
-    IEnumerator InccorectAnswerRoutine()
-    {
-        HighLightKeys();
-        yield return new WaitForSeconds(waitingTime);
-        AddWordToHistoryList();
-        uiManager.OpenMainPanel();
-    }
-
-    private void HighLightKeys()
-    {
-        foreach (Image input in inputBoxList)
-        {
-            string text = input.GetComponentInChildren<TMP_Text>().text;
-
-            Button button= buttons.Find(x=>x.name==text);
-            button.image.color = input.color;
-        }
-    }
-
-    private void AddWordToHistoryList()
-    {
-        historyPanel.GetComponent<GridLayoutGroup>().constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-        historyPanel.GetComponent<GridLayoutGroup>().constraintCount = answerText.Length;
-        for (int i = 0; i < inputBoxList.Count; i++)
-        {
-            Image inputBox = Instantiate(inputBoxPrefab, historyPanel);
-            inputBox.GetComponentInChildren<TMP_Text>().text = GetTextFromInputBox(inputBoxList[i]);
-            Destroy(inputBoxList[i].gameObject);
-        }
-        inputBoxList.Clear();
-    }
-
-    private string GetTextFromInputBox(Image inputBox)
-    {
-        string text = inputBox.GetComponentInChildren<TMP_Text>().text;
-        return text;
-    }
 }

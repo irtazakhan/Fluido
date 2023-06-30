@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 8633168427678611154}
   - component: {fileID: 255833161945857937}
   m_Layer: 5
-  m_Name: Button (27)
+  m_Name: RemoveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,7 +795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: RemoveLetter
         m_Mode: 1
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -2379,7 +2379,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2543,7 +2543,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -2648,7 +2648,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2783,7 +2783,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2918,7 +2918,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -3216,7 +3216,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -3321,7 +3321,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3485,7 +3485,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -3508,6 +3508,7 @@ GameObject:
   - component: {fileID: 3693972723058574709}
   - component: {fileID: 8342962999106228355}
   - component: {fileID: 479884542956576672}
+  - component: {fileID: 6517130385584942731}
   m_Layer: 5
   m_Name: WordlePanel
   m_TagString: Untagged
@@ -3576,6 +3577,52 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6517130385584942731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3910517110315684770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b295a7842cf6e8b4cb28045509e83803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputBoxList: []
+  buttons:
+  - {fileID: 8175210943421234006}
+  - {fileID: 6986344238388827242}
+  - {fileID: 3733577361040612594}
+  - {fileID: 4259050065079805575}
+  - {fileID: 2435597816203697851}
+  - {fileID: 5710428554521833218}
+  - {fileID: 2004662580243492376}
+  - {fileID: 6127628832079600370}
+  - {fileID: 2784116693896542033}
+  - {fileID: 7590261881778892522}
+  - {fileID: 7137846215236707618}
+  - {fileID: 8831108982627207621}
+  - {fileID: 4446275915299467645}
+  - {fileID: 3658813772700423412}
+  - {fileID: 8373870223220833196}
+  - {fileID: 9033937508284207983}
+  - {fileID: 4602241057570338237}
+  - {fileID: 5655657016521908232}
+  - {fileID: 974964713232236979}
+  - {fileID: 6543684204977467342}
+  - {fileID: 9190790070435065850}
+  - {fileID: 4259996766541679556}
+  - {fileID: 2686191525591934645}
+  - {fileID: 6207862856766779822}
+  - {fileID: 463354413727591957}
+  - {fileID: 4230167414309942305}
+  - {fileID: 675288387249420925}
+  inputBoxPrefab: {fileID: 7301654245036115732, guid: c58bee5d64a12874cb0394e4bd51ef48, type: 3}
+  inputBoxParent: {fileID: 8245278958675043086}
+  historyPanel: {fileID: 0}
+  waitingTime: 1
+  uiManager: {fileID: 0}
 --- !u!1 &4327976951731125681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,7 +3716,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3804,7 +3851,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3939,7 +3986,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.45
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4103,7 +4150,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -4284,7 +4331,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4419,7 +4466,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.45
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4554,7 +4601,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4718,7 +4765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -4823,7 +4870,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4958,7 +5005,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5122,7 +5169,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -5256,7 +5303,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -5406,7 +5453,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5570,7 +5617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -5704,7 +5751,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -5809,7 +5856,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5944,7 +5991,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6079,12 +6126,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.05
+  m_fontSize: 18
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 50
+  m_fontSizeMax: 18
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6214,7 +6261,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6378,7 +6425,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -6512,7 +6559,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -6537,7 +6584,7 @@ GameObject:
   - component: {fileID: 8896872413470383878}
   - component: {fileID: 5140679887602722176}
   m_Layer: 5
-  m_Name: Button (19)
+  m_Name: EnterButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6646,7 +6693,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SubmitWord
         m_Mode: 1
@@ -6751,7 +6798,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6802,7 +6849,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6650183568863368309}
-  - component: {fileID: 6770804776987645416}
   m_Layer: 0
   m_Name: WordManager
   m_TagString: Untagged
@@ -6825,53 +6871,6 @@ Transform:
   m_Father: {fileID: 3693972723058574709}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6770804776987645416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7936034510999920651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295a7842cf6e8b4cb28045509e83803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputBoxList: []
-  buttons:
-  - {fileID: 8175210943421234006}
-  - {fileID: 6986344238388827242}
-  - {fileID: 3733577361040612594}
-  - {fileID: 4259050065079805575}
-  - {fileID: 2435597816203697851}
-  - {fileID: 5710428554521833218}
-  - {fileID: 2004662580243492376}
-  - {fileID: 6127628832079600370}
-  - {fileID: 2784116693896542033}
-  - {fileID: 7590261881778892522}
-  - {fileID: 7137846215236707618}
-  - {fileID: 8831108982627207621}
-  - {fileID: 4446275915299467645}
-  - {fileID: 3658813772700423412}
-  - {fileID: 8373870223220833196}
-  - {fileID: 9033937508284207983}
-  - {fileID: 4602241057570338237}
-  - {fileID: 5655657016521908232}
-  - {fileID: 974964713232236979}
-  - {fileID: 6543684204977467342}
-  - {fileID: 9190790070435065850}
-  - {fileID: 4259996766541679556}
-  - {fileID: 2686191525591934645}
-  - {fileID: 6207862856766779822}
-  - {fileID: 463354413727591957}
-  - {fileID: 4230167414309942305}
-  - {fileID: 675288387249420925}
-  inputBoxPrefab: {fileID: 7301654245036115732, guid: c58bee5d64a12874cb0394e4bd51ef48, type: 3}
-  inputBoxParent: {fileID: 8245278958675043086}
-  historyPanel: {fileID: 0}
-  waitingTime: 1
-  uiManager: {fileID: 0}
-  answerText: CASA
 --- !u!1 &7962981508213942332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6994,7 +6993,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -7128,7 +7127,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -7262,7 +7261,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -7367,7 +7366,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7666,7 +7665,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -7800,7 +7799,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -7998,7 +7997,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5
@@ -8224,7 +8223,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6770804776987645416}
+      - m_Target: {fileID: 6517130385584942731}
         m_TargetAssemblyTypeName: WordManager, Assembly-CSharp
         m_MethodName: SetLetter
         m_Mode: 5

@@ -864,6 +864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holder
       objectReference: {fileID: 0}
+    - target: {fileID: 3947450343574666025, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 1153741691}
     - target: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -948,23 +952,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4580153349832905682, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+    - target: {fileID: 5026564450085764611, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
-    - target: {fileID: 5026564450085764611, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 6100235291705659594, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: uiManager
       value: 
       objectReference: {fileID: 1153741691}
     - target: {fileID: 7421322350723229430, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
-    - target: {fileID: 7882732872450680282, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1153741691}
-    - target: {fileID: 8874552642326093470, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+    - target: {fileID: 8984533956107298301, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1153741691}

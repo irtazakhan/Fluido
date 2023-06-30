@@ -5,20 +5,26 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    #region PRIVATE VARIABLES 
     [SerializeField] TMP_Text wordText;
     [SerializeField] TMP_Text englishDescription;
     [SerializeField] TMP_Text spanishDescription;
-
     [SerializeField] GameObject allOptionPanel;
     [SerializeField] GameObject historyPanel;
     [SerializeField] GameObject wordlePanel;
     [SerializeField] GameObject analyzePanel;
     [SerializeField] GameObject genderPanel;
+    #endregion
 
+
+    #region PRIVATE FUNCTIONS
     private void Start()
     {
         wordText.text = GameManager.wordsList.wordData[PlayerPrefs.GetInt("words")].EN_Name;
     }
+    #endregion
+
+    #region PUBLIC FUNCTIONS
 
     public void OpenMainPanel()
     {
@@ -60,4 +66,5 @@ public class UIManager : MonoBehaviour
         analyzePanel.SetActive(false);
         genderPanel.SetActive(false);
     }
+    #endregion
 }
