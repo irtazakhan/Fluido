@@ -4915,6 +4915,10 @@ PrefabInstance:
       propertyPath: historyPanel
       value: 
       objectReference: {fileID: 1884933393599391336}
+    - target: {fileID: 6517130385584942731, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
+      propertyPath: wordGenderManager
+      value: 
+      objectReference: {fileID: 3947450343574666025}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
