@@ -129,8 +129,6 @@ public class WordManager : MonoBehaviour
         {
             Image inputBox = Instantiate(inputBoxPrefab, historyPanel);
             inputBox.GetComponentInChildren<TMP_Text>().text = GetTextFromInputBox(inputBoxList[i]);
-            inputBox.GetComponentInChildren<TMP_Text>().color = Color.black;
-            inputBox.color = inputBoxList[i].color;
             Destroy(inputBoxList[i].gameObject);
         }
         inputBoxList.Clear();
