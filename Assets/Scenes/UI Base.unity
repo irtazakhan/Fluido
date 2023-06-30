@@ -844,6 +844,7 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
+<<<<<<< Updated upstream
     - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -860,6 +861,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 939478888487542413, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 1153741691}
+>>>>>>> Stashed changes
     - target: {fileID: 3589211521990341786, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_Name
       value: Holder
@@ -948,19 +955,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4580153349832905682, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1153741691}
     - target: {fileID: 5026564450085764611, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
     - target: {fileID: 7421322350723229430, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1153741691}
-    - target: {fileID: 7882732872450680282, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
