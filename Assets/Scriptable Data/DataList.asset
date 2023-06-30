@@ -1,0 +1,1324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cbdbc7531612743ad17259843d6ca9, type: 3}
+  m_Name: DataList
+  m_EditorClassIdentifier: 
+  DataSet:
+  - No: 1
+    EN_Name: House
+    Gender: la
+    SP_Name: Casa
+    Length: 4
+    Type: Place Noun
+    EN_Definition: a building for human habitation, especially one that consists
+      of a ground floor and one or more upper storeys.
+    SP_Definition: edificio para habitar.
+    Sprite: House
+    Audio: House
+  - No: 2
+    EN_Name: Shop
+    Gender: la
+    SP_Name: Tienda
+    Length: 6
+    Type: Place Noun
+    EN_Definition: a building or part of a building where goods or services are sold.
+    SP_Definition: "casa, puesto o lugar donde se venden al p\xFAblico art\xEDculos
+      de comercio o servicios."
+    Sprite: Shop
+    Audio: Shop
+  - No: 3
+    EN_Name: School
+    Gender: la
+    SP_Name: Escuela
+    Length: 7
+    Type: Place Noun
+    EN_Definition: any institution at which instruction is given in a particular
+      discipline.
+    SP_Definition: "establecimiento o instituci\xF3n donde se dan o se reciben ciertos
+      tipos de instrucci\xF3n."
+    Sprite: School
+    Audio: School
+  - No: 4
+    EN_Name: Hello
+    Gender: 
+    SP_Name: Hola
+    Length: 4
+    Type: Basic
+    EN_Definition: used as a greeting or to begin a phone conversation.
+    SP_Definition: "Saludo usado para iniciar una conversaci\xF3n o llamar la atenci\xF3n
+      de alguien."
+    Sprite: Hello
+    Audio: Hello
+  - No: 5
+    EN_Name: Goodbye
+    Gender: 
+    SP_Name: "Adi\xF3s"
+    Length: 5
+    Type: Basic
+    EN_Definition: used to express good wishes when parting or at the end of a conversation.
+    SP_Definition: "F\xF3rmula de cortes\xEDa para despedirse."
+    Sprite: Goodbye
+    Audio: Goodbye
+  - No: 6
+    EN_Name: Please
+    Gender: 
+    SP_Name: Por favor
+    Length: 9
+    Type: Basic
+    EN_Definition: used in polite requests or questions.
+    SP_Definition: "Expresi\xF3n usada para pedir algo de manera educada o cort\xE9s."
+    Sprite: Please
+    Audio: Please
+  - No: 7
+    EN_Name: Thank You
+    Gender: 
+    SP_Name: Gracias
+    Length: 7
+    Type: Basic
+    EN_Definition: a polite expression used when acknowledging a gift, service, or
+      compliment, or accepting or refusing an offer.
+    SP_Definition: "Expresi\xF3n de agradecimiento."
+    Sprite: Thank You
+    Audio: Thank You
+  - No: 8
+    EN_Name: You're welcome
+    Gender: 
+    SP_Name: De nada
+    Length: 7
+    Type: Basic
+    EN_Definition: used as a polite response to thanks.
+    SP_Definition: "Respuesta cort\xE9s para indicar que no se espera nada a cambio
+      por un favor o acci\xF3n."
+    Sprite: You're welcome
+    Audio: You're welcome
+  - No: 9
+    EN_Name: Yes
+    Gender: 
+    SP_Name: "S\xED"
+    Length: 2
+    Type: Basic
+    EN_Definition: An affirmative response or agreement to a question or statement.
+    SP_Definition: "Utilizado para expresar afirmaci\xF3n o acuerdo."
+    Sprite: Yes
+    Audio: Yes
+  - No: 10
+    EN_Name: No
+    Gender: 
+    SP_Name: No
+    Length: 2
+    Type: Basic
+    EN_Definition: A negative response or denial to a question or statement.
+    SP_Definition: "Utilizado para expresar negaci\xF3n o rechazo."
+    Sprite: No
+    Audio: No
+  - No: 11
+    EN_Name: Help
+    Gender: 
+    SP_Name: Ayuda
+    Length: 5
+    Type: Basic
+    EN_Definition: Assistance or support provided to someone in need or facing difficulty.
+    SP_Definition: "Acci\xF3n de facilitar o prestar asistencia a alguien."
+    Sprite: Help
+    Audio: Help
+  - No: 12
+    EN_Name: I
+    Gender: 
+    SP_Name: Yo
+    Length: 2
+    Type: Pronoun
+    EN_Definition: The pronoun used to refer to oneself, indicating the speaker or
+      writer.
+    SP_Definition: Pronombre personal que se refiere a la persona que habla.
+    Sprite: I
+    Audio: I
+  - No: 13
+    EN_Name: You
+    Gender: 
+    SP_Name: Tu
+    Length: 2
+    Type: Pronoun
+    EN_Definition: The pronoun used to refer to the person or people being spoken
+      to, indicating the listener or readers.
+    SP_Definition: Pronombre personal que se refiere a la persona a quien se habla.
+    Sprite: You
+    Audio: You
+  - No: 14
+    EN_Name: One Time
+    Gender: 
+    SP_Name: Una vez
+    Length: 7
+    Type: Time Noun
+    EN_Definition: Refers to something that happens or is done only once, without
+      repetition.
+    SP_Definition: "En una ocasi\xF3n o para una instancia \xFAnica."
+    Sprite: One Time
+    Audio: One Time
+  - No: 15
+    EN_Name: Today
+    Gender: 
+    SP_Name: Hoy
+    Length: 3
+    Type: Time Noun
+    EN_Definition: The present day or the day that is happening now.
+    SP_Definition: "En el d\xEDa actual, el d\xEDa mencionado al hablar o escribir."
+    Sprite: Today
+    Audio: Today
+  - No: 16
+    EN_Name: Tomorrow
+    Gender: 
+    SP_Name: "Ma\xF1ana"
+    Length: 6
+    Type: Time Noun
+    EN_Definition: The day following the present day, occurring in the future.
+    SP_Definition: "El d\xEDa siguiente al d\xEDa actual."
+    Sprite: Tomorrow
+    Audio: Tomorrow
+  - No: 17
+    EN_Name: Yesterday
+    Gender: 
+    SP_Name: Ayer
+    Length: 4
+    Type: Time Noun
+    EN_Definition: The day immediately preceding the present day, occurring in the
+      past.
+    SP_Definition: "El d\xEDa anterior al d\xEDa actual."
+    Sprite: Yesterday
+    Audio: Yesterday
+  - No: 18
+    EN_Name: Hour
+    Gender: la
+    SP_Name: Hora
+    Length: 4
+    Type: Time Noun
+    EN_Definition: A unit of time equal to 60 minutes or 1/24th of a day.
+    SP_Definition: Unidad de tiempo equivalente a sesenta minutos.
+    Sprite: Hour
+    Audio: Hour
+  - No: 19
+    EN_Name: Year
+    Gender: el
+    SP_Name: "A\xF1o"
+    Length: 3
+    Type: Time Noun
+    EN_Definition: A unit of time consisting of 365 or 366 days, representing the
+      time it takes for the Earth to complete one orbit around the sun.
+    SP_Definition: El tiempo que tarda un planeta en dar una vuelta completa alrededor
+      del sol.
+    Sprite: Year
+    Audio: Year
+  - No: 20
+    EN_Name: Day
+    Gender: el
+    SP_Name: "D\xEDa"
+    Length: 3
+    Type: Time Noun
+    EN_Definition: A unit of time corresponding to 24 hours, typically divided into
+      daytime (from sunrise to sunset) and nighttime (from sunset to sunrise).
+    SP_Definition: "Periodo de veinticuatro horas que abarca desde una medianoche
+      hasta la siguiente, correspondiente a una rotaci\xF3n de la Tierra sobre su
+      eje."
+    Sprite: Day
+    Audio: Day
+  - No: 21
+    EN_Name: Week
+    Gender: la
+    SP_Name: Semana
+    Length: 6
+    Type: Time Noun
+    EN_Definition: A unit of time consisting of seven days, often used as a basic
+      division of the calendar month.
+    SP_Definition: "Periodo de siete d\xEDas."
+    Sprite: Week
+    Audio: Week
+  - No: 22
+    EN_Name: Before
+    Gender: el
+    SP_Name: Antes
+    Length: 5
+    Type: Time Noun
+    EN_Definition: During the period of time preceding a particular event, time,
+      or point.
+    SP_Definition: "Durante el per\xEDodo de tiempo que precede a un evento, tiempo
+      o punto en particular."
+    Sprite: Before
+    Audio: Before
+  - No: 23
+    EN_Name: After
+    Gender: el
+    SP_Name: "Despu\xE9s"
+    Length: 7
+    Type: Time Noun
+    EN_Definition: During the period of time following a particular event, time,
+      or point.
+    SP_Definition: "Durante el per\xEDodo de tiempo que sigue a un evento, tiempo
+      o punto en particular."
+    Sprite: After
+    Audio: After
+  - No: 24
+    EN_Name: Time
+    Gender: el
+    SP_Name: Tiempo
+    Length: 6
+    Type: Time Noun
+    EN_Definition: The indefinite continued progress of events in the past, present,
+      and future. It can also refer to the allotted or available duration of an activity
+      or event.
+    SP_Definition: "Progreso continuo e indefinido de los eventos en el pasado, presente
+      y futuro. Tambi\xE9n , puede referirse a la duraci\xF3n asignada o disponible
+      de una actividad o evento."
+    Sprite: Time
+    Audio: Time
+  - No: 25
+    EN_Name: Here
+    Gender: el
+    SP_Name: "Aqu\xED"
+    Length: 4
+    Type: Place Noun
+    EN_Definition: In, at, or to this place or position.
+    SP_Definition: En este lugar, cerca de la persona que habla.
+    Sprite: Here
+    Audio: Here
+  - No: 26
+    EN_Name: There
+    Gender: 
+    SP_Name: "All\xED"
+    Length: 4
+    Type: Place Noun
+    EN_Definition: In, at, or to a place or position that is not here or the place
+      where the speaker is.
+    SP_Definition: En aquel lugar, alejado de la persona que habla y cerca de la
+      persona a la que se dirige.
+    Sprite: There
+    Audio: There
+  - No: 27
+    EN_Name: Now
+    Gender: el
+    SP_Name: Ahora
+    Length: 5
+    Type: Place Noun
+    EN_Definition: At the present time or moment; at this time.
+    SP_Definition: En este momento, en el tiempo presente.
+    Sprite: Now
+    Audio: Now
+  - No: 28
+    EN_Name: Place
+    Gender: el
+    SP_Name: Sitio
+    Length: 5
+    Type: Place Noun
+    EN_Definition: A particular position, point, or area in space; a location.
+    SP_Definition: "Lugar f\xEDsico o espacio que ocupa algo o alguien."
+    Sprite: Place
+    Audio: Place
+  - No: 29
+    EN_Name: Bathroom
+    Gender: el
+    SP_Name: "Ba\xF1o"
+    Length: 4
+    Type: Place Noun
+    EN_Definition: A room containing a bathtub or shower and typically a washbasin
+      and toilet.
+    SP_Definition: "Habitaci\xF3n o lugar destinado para la higiene personal y para
+      la evacuaci\xF3n de desechos corporales."
+    Sprite: Bathroom
+    Audio: Bathroom
+  - No: 30
+    EN_Name: City
+    Gender: la
+    SP_Name: Ciudad
+    Length: 6
+    Type: Place Noun
+    EN_Definition: A large town, typically one with a high population density and
+      infrastructure.
+    SP_Definition: "Centro urbano con un alto grado de desarrollo y densidad de poblaci\xF3n."
+    Sprite: City
+    Audio: City
+  - No: 31
+    EN_Name: Country
+    Gender: el
+    SP_Name: "Pa\xEDs"
+    Length: 4
+    Type: Place Noun
+    EN_Definition: A nation with its own government, occupying a particular territory.
+      It can also refer to the land of a person's birth, residence, or citizenship.
+    SP_Definition: "Naci\xF3n o territorio soberano."
+    Sprite: Country
+    Audio: Country
+  - No: 32
+    EN_Name: Thing
+    Gender: la
+    SP_Name: Cosa
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: An object that one need not, cannot, or does not wish to give
+      a specific name to.
+    SP_Definition: "Objeto material sin determinar o espec\xEDfico."
+    Sprite: Thing
+    Audio: Thing
+  - No: 33
+    EN_Name: Nothing
+    Gender: la
+    SP_Name: Nada
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: Not anything; no single thing.
+    SP_Definition: La ausencia de algo o la falta de todo.
+    Sprite: Nothing
+    Audio: Nothing
+  - No: 34
+    EN_Name: Something
+    Gender: 
+    SP_Name: Algo
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: A thing that is unspecified or unknown.
+    SP_Definition: Alguna cosa o alguna cantidad no especificada.
+    Sprite: Something
+    Audio: Something
+  - No: 35
+    EN_Name: This
+    Gender: 
+    SP_Name: Este
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: Used to identify a specific person or thing close at hand or being
+      experienced or referred to.
+    SP_Definition: "Indica proximidad en el espacio o en el tiempo. Puede referirse
+      a algo que est\xE1 cerca del hablante."
+    Sprite: This
+    Audio: This
+  - No: 36
+    EN_Name: This
+    Gender: 
+    SP_Name: Esto
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: Used to identify a specific person or thing close at hand or being
+      experienced or referred to.
+    SP_Definition: "Indica proximidad en el espacio o en el tiempo. Puede referirse
+      a algo que est\xE1 cerca del hablante."
+    Sprite: This
+    Audio: This
+  - No: 37
+    EN_Name: This
+    Gender: 
+    SP_Name: Esta
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: Used to identify a specific person or thing close at hand or being
+      experienced or referred to.
+    SP_Definition: "Indica proximidad en el espacio o en el tiempo. Puede referirse
+      a algo que est\xE1 cerca del hablante."
+    Sprite: This
+    Audio: This
+  - No: 38
+    EN_Name: That
+    Gender: 
+    SP_Name: Ese
+    Length: 3
+    Type: Thing Noun
+    EN_Definition: Used to identify a specific person or thing observed or heard
+      by the speaker, or to refer to one previously mentioned or understood from
+      the context.
+    SP_Definition: "Indica proximidad en el espacio o en el tiempo. Puede referirse
+      a algo que est\xE1 cerca de la persona a la que se dirige."
+    Sprite: That
+    Audio: That
+  - No: 39
+    EN_Name: That
+    Gender: 
+    SP_Name: Eso
+    Length: 3
+    Type: Thing Noun
+    EN_Definition: Used to identify a specific person or thing observed or heard
+      by the speaker, or to refer to one previously mentioned or understood from
+      the context.
+    SP_Definition: "Indica proximidad en el espacio o en el tiempo. Puede referirse
+      a algo que est\xE1 cerca de la persona a la que se dirige."
+    Sprite: That
+    Audio: That
+  - No: 40
+    EN_Name: That
+    Gender: 
+    SP_Name: Esa
+    Length: 3
+    Type: Thing Noun
+    EN_Definition: Used to identify a specific person or thing observed or heard
+      by the speaker, or to refer to one previously mentioned or understood from
+      the context.
+    SP_Definition: "Indica proximidad en el espacio o en el tiempo. Puede referirse
+      a algo que est\xE1 cerca de la persona a la que se dirige."
+    Sprite: That
+    Audio: That
+  - No: 41
+    EN_Name: Car
+    Gender: el
+    SP_Name: Coche
+    Length: 5
+    Type: Thing Noun
+    EN_Definition: A road vehicle, typically with four wheels, powered by an internal
+      combustion engine and able to carry a small number of people.
+    SP_Definition: "Veh\xEDculo de motor utilizado para el transporte de personas."
+    Sprite: Car
+    Audio: Car
+  - No: 42
+    EN_Name: Language
+    Gender: el
+    SP_Name: Idioma
+    Length: 6
+    Type: Thing Noun
+    EN_Definition: The method of human communication, either spoken or written, consisting
+      of the use of words in a structured and conventional way.
+    SP_Definition: "Sistema de comunicaci\xF3n verbal propio de una comunidad o naci\xF3n."
+    Sprite: Language
+    Audio: Language
+  - No: 43
+    EN_Name: Water
+    Gender: el
+    SP_Name: Agua
+    Length: 4
+    Type: Thing Noun
+    EN_Definition: A colorless, transparent, odorless, and tasteless liquid that
+      forms the seas, lakes, rivers, and rain and is the basis of the fluids of living
+      organisms.
+    SP_Definition: "Sustancia l\xEDquida e incolora, compuesta por hidr\xF3geno y
+      ox\xEDgeno, esencial para la vida."
+    Sprite: Water
+    Audio: Water
+  - No: 44
+    EN_Name: Movie
+    Gender: la
+    SP_Name: "Pel\xEDcula"
+    Length: 8
+    Type: Thing Noun
+    EN_Definition: A motion picture; a film. It refers to a sequence of moving images
+      recorded with sound and shown in a theater or on television.
+    SP_Definition: "Obra cinematogr\xE1fica; tambi\xE9n se refiere a una capa delgada
+      o recubrimiento de algo."
+    Sprite: Movie
+    Audio: Movie
+  - No: 45
+    EN_Name: Man
+    Gender: el
+    SP_Name: Hombre
+    Length: 6
+    Type: People Noun
+    EN_Definition: An adult human male.
+    SP_Definition: Ser humano adulto de sexo masculino.
+    Sprite: Man
+    Audio: Man
+  - No: 46
+    EN_Name: Woman
+    Gender: la
+    SP_Name: Mujer
+    Length: 5
+    Type: People Noun
+    EN_Definition: An adult human female.
+    SP_Definition: Ser humano adulto de sexo femenino.
+    Sprite: Woman
+    Audio: Woman
+  - No: 47
+    EN_Name: Boy
+    Gender: el
+    SP_Name: Chico
+    Length: 5
+    Type: People Noun
+    EN_Definition: A male child or a young male person.
+    SP_Definition: Persona joven, generalmente de sexo masculino.
+    Sprite: Boy
+    Audio: Boy
+  - No: 48
+    EN_Name: Girl
+    Gender: la
+    SP_Name: Chica
+    Length: 5
+    Type: People Noun
+    EN_Definition: A female child or a young female person.
+    SP_Definition: Persona joven, generalmente de sexo femenino.
+    Sprite: Girl
+    Audio: Girl
+  - No: 49
+    EN_Name: Friend
+    Gender: el
+    SP_Name: Amigo
+    Length: 5
+    Type: People Noun
+    EN_Definition: A person with whom one has a bond of mutual affection, typically
+      one exclusive of sexual or family relations.
+    SP_Definition: Persona a la que se tiene afecto, confianza y reciprocidad.
+    Sprite: Friend
+    Audio: Friend
+  - No: 50
+    EN_Name: Person
+    Gender: la
+    SP_Name: Persona
+    Length: 7
+    Type: People Noun
+    EN_Definition: A human being regarded as an individual.
+    SP_Definition: Ser humano, individuo.
+    Sprite: Person
+    Audio: Person
+  - No: 51
+    EN_Name: Family
+    Gender: la
+    SP_Name: Familia
+    Length: 7
+    Type: People Noun
+    EN_Definition: A group consisting of one or two parents and their children, whether
+      living together or not. It can also refer to all the descendants of a common
+      ancestor.
+    SP_Definition: "Grupo de personas relacionadas entre s\xED por parentesco."
+    Sprite: Family
+    Audio: Family
+  - No: 52
+    EN_Name: To be (permanent)
+    Gender: 
+    SP_Name: Ser
+    Length: 3
+    Type: Verb
+    EN_Definition: Exist or have reality as an identifying characteristic.
+    SP_Definition: Existir o tener realidad.
+    Sprite: To be (permanent)
+    Audio: To be (permanent)
+  - No: 53
+    EN_Name: To be (non-permanent)
+    Gender: 
+    SP_Name: Estar
+    Length: 5
+    Type: Verb
+    EN_Definition: Exist temporarily or in a specified state.
+    SP_Definition: "Encontrarse o hallarse en un lugar o situaci\xF3n."
+    Sprite: To be (non-permanent)
+    Audio: To be (non-permanent)
+  - No: 54
+    EN_Name: To have, To exist
+    Gender: 
+    SP_Name: Haber
+    Length: 5
+    Type: Verb
+    EN_Definition: Possess or own; be in possession of.
+    SP_Definition: Existir, estar presente.
+    Sprite: To have, To exist
+    Audio: To have, To exist
+  - No: 55
+    EN_Name: To have, To own
+    Gender: 
+    SP_Name: Tener
+    Length: 5
+    Type: Verb
+    EN_Definition: Possess, own, or hold.
+    SP_Definition: Poseer o contar con algo.
+    Sprite: To have, To own
+    Audio: To have, To own
+  - No: 56
+    EN_Name: To do, To make
+    Gender: 
+    SP_Name: Hacer
+    Length: 5
+    Type: Verb
+    EN_Definition: Perform an action or activity; create or construct something.
+    SP_Definition: "Realizar una acci\xF3n o actividad."
+    Sprite: To do, To make
+    Audio: To do, To make
+  - No: 57
+    EN_Name: Can do
+    Gender: 
+    SP_Name: Poder
+    Length: 5
+    Type: Verb
+    EN_Definition: Have the ability or capacity to perform a specific action or activity.
+    SP_Definition: Tener la capacidad o habilidad para hacer algo.
+    Sprite: Can do
+    Audio: Can do
+  - No: 58
+    EN_Name: To see
+    Gender: 
+    SP_Name: Ver
+    Length: 3
+    Type: Verb
+    EN_Definition: Perceive with the eyes; discern visually.
+    SP_Definition: Percibir con los ojos o la vista.
+    Sprite: To see
+    Audio: To see
+  - No: 59
+    EN_Name: To go
+    Gender: 
+    SP_Name: Ir
+    Length: 2
+    Type: Verb
+    EN_Definition: Move from one place to another; travel.
+    SP_Definition: Desplazarse o dirigirse hacia un lugar.
+    Sprite: To go
+    Audio: To go
+  - No: 60
+    EN_Name: To give
+    Gender: 
+    SP_Name: Dar
+    Length: 3
+    Type: Verb
+    EN_Definition: Freely transfer the possession of something to someone; provide
+      or supply.
+    SP_Definition: "Transferir la posesi\xF3n de algo a alguien."
+    Sprite: To give
+    Audio: To give
+  - No: 61
+    EN_Name: To know
+    Gender: 
+    SP_Name: Saber
+    Length: 5
+    Type: Verb
+    EN_Definition: Have knowledge or awareness of something; be acquainted or familiar
+      with.
+    SP_Definition: "Tener conocimiento o informaci\xF3n sobre algo."
+    Sprite: To know
+    Audio: To know
+  - No: 62
+    EN_Name: To want, To love
+    Gender: 
+    SP_Name: Querer
+    Length: 6
+    Type: Verb
+    EN_Definition: Have a desire or wish for something or someone; feel a deep affection
+      or attachment towards.
+    SP_Definition: "Desear o tener intenci\xF3n de hacer algo."
+    Sprite: To want, To love
+    Audio: To want, To love
+  - No: 63
+    EN_Name: To believe
+    Gender: 
+    SP_Name: Creer
+    Length: 5
+    Type: Verb
+    EN_Definition: Accept that something is true or exists without evidence or proof.
+    SP_Definition: Tener fe o confianza en algo o alguien.
+    Sprite: To believe
+    Audio: To believe
+  - No: 64
+    EN_Name: To talk
+    Gender: 
+    SP_Name: Hablar
+    Length: 6
+    Type: Verb
+    EN_Definition: Speak in order to express or exchange information or ideas.
+    SP_Definition: Emitir palabras o comunicarse oralmente.
+    Sprite: To talk
+    Audio: To talk
+  - No: 65
+    EN_Name: To carry
+    Gender: 
+    SP_Name: Llevar
+    Length: 6
+    Type: Verb
+    EN_Definition: Support and move (someone or something) from one place to another.
+    SP_Definition: Transportar o conducir algo o a alguien de un lugar a otro.
+    Sprite: To carry
+    Audio: To carry
+  - No: 66
+    EN_Name: To find
+    Gender: 
+    SP_Name: Encontrar
+    Length: 9
+    Type: Verb
+    EN_Definition: Discover or perceive by chance or intentionally; locate or obtain.
+    SP_Definition: Dar con alguien o algo que se busca o que se espera encontrar.
+    Sprite: To find
+    Audio: To find
+  - No: 67
+    EN_Name: To like
+    Gender: 
+    SP_Name: Gustar
+    Length: 6
+    Type: Verb
+    EN_Definition: Find agreeable, enjoyable, or satisfactory; have a favorable opinion
+      or preference for.
+    SP_Definition: Causar placer o agradar a alguien.
+    Sprite: To like
+    Audio: To like
+  - No: 68
+    EN_Name: To tell
+    Gender: 
+    SP_Name: Decir
+    Length: 5
+    Type: Verb
+    EN_Definition: Communicate information, facts, or news to someone through speech,
+      writing, or gestures.
+    SP_Definition: Expresar con palabras algo a alguien.
+    Sprite: To tell
+    Audio: To tell
+  - No: 69
+    EN_Name: To come
+    Gender: 
+    SP_Name: Venir
+    Length: 5
+    Type: Verb
+    EN_Definition: Move or travel towards the speaker or the person or place being
+      referred to.
+    SP_Definition: "Moverse o desplazarse hacia el lugar donde est\xE1 la persona
+      que habla."
+    Sprite: To come
+    Audio: To come
+  - No: 70
+    EN_Name: To think
+    Gender: 
+    SP_Name: Pensar
+    Length: 6
+    Type: Verb
+    EN_Definition: Have a particular opinion, belief, or idea; use one's mind to
+      consider or reason about something.
+    SP_Definition: Tener en la mente o en el pensamiento algo o alguien; reflexionar.
+    Sprite: To think
+    Audio: To think
+  - No: 71
+    EN_Name: To understand
+    Gender: 
+    SP_Name: Entender
+    Length: 8
+    Type: Verb
+    EN_Definition: Perceive the intended meaning or significance of something; comprehend.
+    SP_Definition: Comprender o captar el significado o sentido de algo.
+    Sprite: To understand
+    Audio: To understand
+  - No: 72
+    EN_Name: To read
+    Gender: 
+    SP_Name: Leer
+    Length: 4
+    Type: Verb
+    EN_Definition: Look at and comprehend the meaning of written or printed matter
+      by mentally interpreting the characters or symbols.
+    SP_Definition: Interpretar o comprender el significado de las palabras escritas
+      o impresas.
+    Sprite: To read
+    Audio: To read
+  - No: 73
+    EN_Name: To eat
+    Gender: 
+    SP_Name: Comer
+    Length: 5
+    Type: Verb
+    EN_Definition: Put food into the mouth and chew and swallow it.
+    SP_Definition: "Ingerir alimentos a trav\xE9s de la boca."
+    Sprite: To eat
+    Audio: To eat
+  - No: 74
+    EN_Name: To drink
+    Gender: 
+    SP_Name: Beber
+    Length: 5
+    Type: Verb
+    EN_Definition: Take (a liquid) into the mouth and swallow.
+    SP_Definition: "Ingerir l\xEDquidos a trav\xE9s de la boca."
+    Sprite: To drink
+    Audio: To drink
+  - No: 75
+    EN_Name: To work
+    Gender: 
+    SP_Name: Trabajar
+    Length: 8
+    Type: Verb
+    EN_Definition: Engage in activity that involves mental or physical effort, especially
+      to earn money or achieve a particular result.
+    SP_Definition: Realizar una actividad laboral o profesional para obtener un salario
+      o beneficio.
+    Sprite: To work
+    Audio: To work
+  - No: 76
+    EN_Name: To use
+    Gender: 
+    SP_Name: Usar
+    Length: 4
+    Type: Verb
+    EN_Definition: Take, hold, or deploy (something) as a means of accomplishing
+      a purpose or achieving a result.
+    SP_Definition: "Emplear o utilizar algo para un determinado prop\xF3sito o fin."
+    Sprite: To use
+    Audio: To use
+  - No: 77
+    EN_Name: All, every
+    Gender: 
+    SP_Name: Todo
+    Length: 4
+    Type: Adjectives
+    EN_Definition: Used to refer to the whole quantity or extent of something; used
+      to refer to each individual member of a set without exception.
+    SP_Definition: "Se utiliza para referirse a la totalidad o extensi\xF3n de algo;
+      se utiliza para referirse a cada miembro individual de un conjunto sin excepci\xF3n."
+    Sprite: All, every
+    Audio: All, every
+  - No: 78
+    EN_Name: Some
+    Gender: 
+    SP_Name: Alguno
+    Length: 6
+    Type: Adjectives
+    EN_Definition: An unspecified amount or number of something; a portion or part.
+    SP_Definition: "Cantidad o n\xFAmero indeterminado de algo; una porci\xF3n o
+      parte."
+    Sprite: Some
+    Audio: Some
+  - No: 79
+    EN_Name: More
+    Gender: 
+    SP_Name: "M\xE1s"
+    Length: 3
+    Type: Adjectives
+    EN_Definition: A greater or additional amount or degree of something.
+    SP_Definition: Una cantidad o grado mayor o adicional de algo.
+    Sprite: More
+    Audio: More
+  - No: 80
+    EN_Name: Less
+    Gender: 
+    SP_Name: Menos
+    Length: 5
+    Type: Adjectives
+    EN_Definition: A smaller amount or degree of something.
+    SP_Definition: Una cantidad o grado menor de algo.
+    Sprite: Less
+    Audio: Less
+  - No: 81
+    EN_Name: Very
+    Gender: 
+    SP_Name: Muy
+    Length: 3
+    Type: Adjectives
+    EN_Definition: Used to emphasize an adjective or adverb, expressing a high degree
+      or intensity.
+    SP_Definition: Se utiliza para enfatizar un adjetivo o adverbio, expresando un
+      alto grado o intensidad.
+    Sprite: Very
+    Audio: Very
+  - No: 82
+    EN_Name: A lot
+    Gender: 
+    SP_Name: Mucho
+    Length: 5
+    Type: Adjectives
+    EN_Definition: A large amount or quantity of something.
+    SP_Definition: Una gran cantidad de algo.
+    Sprite: A lot
+    Audio: A lot
+  - No: 83
+    EN_Name: Other
+    Gender: 
+    SP_Name: Otro
+    Length: 4
+    Type: Adjectives
+    EN_Definition: Different or distinct from the one or ones already mentioned or
+      implied.
+    SP_Definition: "Diferente o distinto del que ya se mencion\xF3 o se dio a entender."
+    Sprite: Other
+    Audio: Other
+  - No: 84
+    EN_Name: Almost
+    Gender: 
+    SP_Name: Casi
+    Length: 4
+    Type: Adjectives
+    EN_Definition: Not quite; very nearly.
+    SP_Definition: No del todo; casi por completo.
+    Sprite: Almost
+    Audio: Almost
+  - No: 85
+    EN_Name: Same
+    Gender: 
+    SP_Name: Mismo
+    Length: 5
+    Type: Adjectives
+    EN_Definition: Identical; not different or changed.
+    SP_Definition: "Id\xE9ntico; no diferente ni cambiado."
+    Sprite: Same
+    Audio: Same
+  - No: 86
+    EN_Name: Like this
+    Gender: 
+    SP_Name: "As\xED"
+    Length: 3
+    Type: Adjectives
+    EN_Definition: In a similar manner or way; resembling what has been mentioned.
+    SP_Definition: De manera o forma similar; parecido a lo que se ha mencionado.
+    Sprite: Like this
+    Audio: Like this
+  - No: 87
+    EN_Name: Also
+    Gender: 
+    SP_Name: "Tambi\xE9n"
+    Length: 7
+    Type: Adjectives
+    EN_Definition: In addition; too; besides.
+    SP_Definition: "Adem\xE1s; tambi\xE9n."
+    Sprite: Also
+    Audio: Also
+  - No: 88
+    EN_Name: Until, Even
+    Gender: 
+    SP_Name: Hasta
+    Length: 5
+    Type: Adjectives
+    EN_Definition: Up to the point in time or the event mentioned; before now. Used
+      to emphasize something surprising or extreme.
+    SP_Definition: Hasta el punto en el tiempo o el evento mencionado; antes de ahora.
+    Sprite: Until, Even
+    Audio: Until, Even
+  - No: 89
+    EN_Name: Large
+    Gender: 
+    SP_Name: Grande
+    Length: 6
+    Type: Adjectives
+    EN_Definition: Of considerable or relatively great size, extent, or capacity.
+    SP_Definition: "De considerable o relativamente gran tama\xF1o, extensi\xF3n
+      o capacidad."
+    Sprite: Large
+    Audio: Large
+  - No: 90
+    EN_Name: Small
+    Gender: 
+    SP_Name: "Peque\xF1o"
+    Length: 7
+    Type: Adjectives
+    EN_Definition: Of a size that is less than normal or usual.
+    SP_Definition: "De un tama\xF1o que es menor de lo normal o usual."
+    Sprite: Small
+    Audio: Small
+  - No: 91
+    EN_Name: Well
+    Gender: 
+    SP_Name: Bien
+    Length: 4
+    Type: Adjectives
+    EN_Definition: In a good or satisfactory way; to a high standard.
+    SP_Definition: De una manera buena o satisfactoria; a un alto nivel.
+    Sprite: Well
+    Audio: Well
+  - No: 92
+    EN_Name: A little bit
+    Gender: 
+    SP_Name: Poco
+    Length: 4
+    Type: Adjectives
+    EN_Definition: To a small extent; slightly.
+    SP_Definition: En cierta medida; ligeramente.
+    Sprite: A little bit
+    Audio: A little bit
+  - No: 93
+    EN_Name: Always
+    Gender: 
+    SP_Name: Siempre
+    Length: 7
+    Type: Adjectives
+    EN_Definition: At all times; on all occasions.
+    SP_Definition: En todo momento; en todas las ocasiones.
+    Sprite: Always
+    Audio: Always
+  - No: 94
+    EN_Name: Never
+    Gender: 
+    SP_Name: Nunca
+    Length: 5
+    Type: Adjectives
+    EN_Definition: Not ever; at no time.
+    SP_Definition: "En ning\xFAn momento; jam\xE1s."
+    Sprite: Never
+    Audio: Never
+  - No: 95
+    EN_Name: Each
+    Gender: 
+    SP_Name: Cada
+    Length: 4
+    Type: Adjectives
+    EN_Definition: Every one of two or more people or things considered separately.
+    SP_Definition: "Cada uno de dos o m\xE1s personas o cosas consideradas por separado."
+    Sprite: Each
+    Audio: Each
+  - No: 96
+    EN_Name: New
+    Gender: 
+    SP_Name: Nuevo
+    Length: 5
+    Type: Adjectives
+    EN_Definition: Not existing before; recently made, produced, or developed.
+    SP_Definition: "Que no exist\xEDa antes; hecho, producido o desarrollado recientemente."
+    Sprite: New
+    Audio: New
+  - No: 97
+    EN_Name: Old
+    Gender: 
+    SP_Name: Antigua
+    Length: 7
+    Type: Adjectives
+    EN_Definition: Having lived for a long time; no longer young.
+    SP_Definition: Que ha vivido durante mucho tiempo; no joven.
+    Sprite: Old
+    Audio: Old
+  - No: 98
+    EN_Name: Good
+    Gender: 
+    SP_Name: Bueno
+    Length: 5
+    Type: Adjectives
+    EN_Definition: To be desired or approved of; having the required qualities; satisfactory.
+    SP_Definition: Que es deseado o aprobado; que tiene las cualidades requeridas;
+      satisfactorio.
+    Sprite: Good
+    Audio: Good
+  - No: 99
+    EN_Name: Bad
+    Gender: 
+    SP_Name: Mal
+    Length: 3
+    Type: Adjectives
+    EN_Definition: Of poor quality or low standard; not such as to be hoped for or
+      desired.
+    SP_Definition: "De mala calidad o de bajo est\xE1ndar; no tan bueno como se esperaba
+      o deseaba."
+    Sprite: Bad
+    Audio: Bad
+  - No: 100
+    EN_Name: High
+    Gender: 
+    SP_Name: Alto
+    Length: 4
+    Type: Adjectives
+    EN_Definition: Of great vertical extent; great in quantity, size, or intensity.
+    SP_Definition: "De gran altura; de gran cantidad, tama\xF1o o intensidad."
+    Sprite: High
+    Audio: High
+  - No: 101
+    EN_Name: Low
+    Gender: 
+    SP_Name: Bajo
+    Length: 4
+    Type: Adjectives
+    EN_Definition: Close to or below the ground or another surface; not high or tall.
+    SP_Definition: Cerca del suelo u otra superficie; no alto o alto.
+    Sprite: Low
+    Audio: Low
+  - No: 102
+    EN_Name: Far
+    Gender: 
+    SP_Name: Lejos
+    Length: 5
+    Type: Adjectives
+    EN_Definition: At, to, or by a great distance; a long way off.
+    SP_Definition: A una gran distancia; muy lejos.
+    Sprite: Far
+    Audio: Far
+  - No: 103
+    EN_Name: Near
+    Gender: 
+    SP_Name: Cerca
+    Length: 5
+    Type: Adjectives
+    EN_Definition: At or to a short distance away; close.
+    SP_Definition: A una corta distancia; cerca.
+    Sprite: Near
+    Audio: Near
+  - No: 104
+    EN_Name: Beautiful
+    Gender: 
+    SP_Name: Hermosa
+    Length: 7
+    Type: Adjectives
+    EN_Definition: Pleasing the senses or mind aesthetically; of a very high standard;
+      excellent.
+    SP_Definition: "Que agrada a los sentidos o a la mente est\xE9ticamente; de muy
+      alto nivel; excelente."
+    Sprite: Beautiful
+    Audio: Beautiful
+  - No: 105
+    EN_Name: Ugly
+    Gender: 
+    SP_Name: Feo
+    Length: 3
+    Type: Adjectives
+    EN_Definition: Unpleasant or repulsive in appearance.
+    SP_Definition: Desagradable o repulsivo en apariencia.
+    Sprite: Ugly
+    Audio: Ugly
+  - No: 106
+    EN_Name: Difficult
+    Gender: 
+    SP_Name: "Dif\xEDcil"
+    Length: 7
+    Type: Adjectives
+    EN_Definition: Needing much effort or skill to accomplish, deal with, or understand.
+    SP_Definition: Que requiere mucho esfuerzo o habilidad para lograr, manejar o
+      entender.
+    Sprite: Difficult
+    Audio: Difficult
+  - No: 107
+    EN_Name: Easy
+    Gender: 
+    SP_Name: "F\xE1cil"
+    Length: 5
+    Type: Adjectives
+    EN_Definition: Achieved without great effort; presenting no difficulty.
+    SP_Definition: Que se logra sin mucho esfuerzo; que no presenta dificultad.
+    Sprite: Easy
+    Audio: Easy
+  - No: 108
+    EN_Name: That, Which
+    Gender: 
+    SP_Name: Que
+    Length: 3
+    Type: Conjunctions & Connectors
+    EN_Definition: Used to identify a specific person or thing observed or heard
+      by the speaker.
+    SP_Definition: "Se utiliza para identificar a una persona o cosa espec\xEDfica
+      observada o escuchada por el hablante."
+    Sprite: That, Which
+    Audio: That, Which
+  - No: 109
+    EN_Name: Like, As
+    Gender: 
+    SP_Name: Como
+    Length: 4
+    Type: Conjunctions & Connectors
+    EN_Definition: Having the same characteristics or qualities as someone or something.
+    SP_Definition: "Que tiene las mismas caracter\xEDsticas o cualidades que alguien
+      o algo."
+    Sprite: Like, As
+    Audio: Like, As
+  - No: 110
+    EN_Name: But
+    Gender: 
+    SP_Name: Pero
+    Length: 4
+    Type: Conjunctions & Connectors
+    EN_Definition: Used to introduce something contrasting with what has already
+      been mentioned.
+    SP_Definition: Se utiliza para introducir algo que contrasta con lo que ya se
+      ha mencionado.
+    Sprite: But
+    Audio: But
+  - No: 111
+    EN_Name: Because
+    Gender: 
+    SP_Name: Porque
+    Length: 6
+    Type: Conjunctions & Connectors
+    EN_Definition: For the reason that; since.
+    SP_Definition: "Por la raz\xF3n de que; ya que."
+    Sprite: Because
+    Audio: Because
+  - No: 112
+    EN_Name: So, Then
+    Gender: 
+    SP_Name: Entonces
+    Length: 8
+    Type: Conjunctions & Connectors
+    EN_Definition: Used to express a consequence or result.
+    SP_Definition: Se utiliza para expresar una consecuencia o resultado.
+    Sprite: So, Then
+    Audio: So, Then
+  - No: 113
+    EN_Name: Well then
+    Gender: 
+    SP_Name: Pues
+    Length: 4
+    Type: Conjunctions & Connectors
+    EN_Definition: Used to introduce a remark or response.
+    SP_Definition: Se utiliza para introducir un comentario o respuesta.
+    Sprite: Well then
+    Audio: Well then
+  - No: 114
+    EN_Name: Although
+    Gender: 
+    SP_Name: Aunque
+    Length: 6
+    Type: Conjunctions & Connectors
+    EN_Definition: In spite of the fact that; even though.
+    SP_Definition: A pesar del hecho de que; aunque.
+    Sprite: Although
+    Audio: Although
+  - No: 115
+    EN_Name: While
+    Gender: 
+    SP_Name: Mientras
+    Length: 8
+    Type: Conjunctions & Connectors
+    EN_Definition: During the time that; at the same time as.
+    SP_Definition: Durante el tiempo que; al mismo tiempo que.
+    Sprite: While
+    Audio: While
+  - No: 116
+    EN_Name: Besides that
+    Gender: 
+    SP_Name: "Adem\xE1s"
+    Length: 6
+    Type: Conjunctions & Connectors
+    EN_Definition: In addition to that; apart from that.
+    SP_Definition: "Adem\xE1s de eso; aparte de eso."
+    Sprite: Besides that
+    Audio: Besides that
+  - No: 117
+    EN_Name: What
+    Gender: 
+    SP_Name: "\xBFQu\xE9"
+    Length: 4
+    Type: Questions
+    EN_Definition: Asking for information specifying something.
+    SP_Definition: "Pregunta por informaci\xF3n que especifica algo."
+    Sprite: What
+    Audio: What
+  - No: 118
+    EN_Name: Who
+    Gender: 
+    SP_Name: "\xBFQui\xE9n"
+    Length: 6
+    Type: Questions
+    EN_Definition: Asking for the identity or name of a person.
+    SP_Definition: Pregunta por la identidad o nombre de una persona.
+    Sprite: Who
+    Audio: Who
+  - No: 119
+    EN_Name: When
+    Gender: 
+    SP_Name: "\xBFCu\xE1ndo"
+    Length: 7
+    Type: Questions
+    EN_Definition: At what time; on what occasion.
+    SP_Definition: "En qu\xE9 momento; en qu\xE9 ocasi\xF3n."
+    Sprite: When
+    Audio: When
+  - No: 120
+    EN_Name: Where
+    Gender: 
+    SP_Name: "\xBFD\xF3nde"
+    Length: 6
+    Type: Questions
+    EN_Definition: In or to what place or position.
+    SP_Definition: "En qu\xE9 lugar o posici\xF3n."
+    Sprite: Where
+    Audio: Where
+  - No: 121
+    EN_Name: How
+    Gender: 
+    SP_Name: "\xBFC\xF3mo"
+    Length: 5
+    Type: Questions
+    EN_Definition: In what way or manner; by what means.
+    SP_Definition: "De qu\xE9 manera o forma; con qu\xE9 medios."
+    Sprite: How
+    Audio: How
+  - No: 122
+    EN_Name: Why
+    Gender: 
+    SP_Name: "\xBFPor qu\xE9"
+    Length: 8
+    Type: Questions
+    EN_Definition: For what reason or purpose.
+    SP_Definition: "Por qu\xE9 raz\xF3n o prop\xF3sito."
+    Sprite: Why
+    Audio: Why

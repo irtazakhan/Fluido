@@ -19,7 +19,7 @@ public class WordGenderManager : MonoBehaviour
     private void OnEnable()
     {
         int num = PlayerPrefs.GetInt("words");
-        string gender = GameManager.wordsList.wordData[num].Gender;
+        string gender = GameManager.Instance.dataList.DataSet[num].Gender;
 
         maleArticleButton.onClick.RemoveAllListeners();
         femaleArticleButton.onClick.RemoveAllListeners();
@@ -41,6 +41,9 @@ public class WordGenderManager : MonoBehaviour
                 OpenWordlepanel();
             });
             maleArticleButton.onClick.AddListener(() => OpenWordlepanel());
+        }else
+        {
+            OpenWordlepanel();
         }
     }
 

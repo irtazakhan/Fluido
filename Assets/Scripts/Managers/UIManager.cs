@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
     #region PRIVATE FUNCTIONS
     private void Start()
     {
-        wordText.text = GameManager.wordsList.wordData[PlayerPrefs.GetInt("words")].EN_Name;
+        wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
     }
     #endregion
 
@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
     {
         CloseAllPanel();
         allOptionPanel.SetActive(true);
-        wordText.text = GameManager.wordsList.wordData[PlayerPrefs.GetInt("words")].EN_Name;
+        wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
     }
 
     public void OpenWordlePanel()
@@ -47,8 +47,8 @@ public class UIManager : MonoBehaviour
     public void OpenAnalyzePanel()
     {
         int wordNumber = PlayerPrefs.GetInt("words");
-        englishDescription.text ="English Definition: " +GameManager.wordsList.wordData[wordNumber].EN_Definition;
-        spanishDescription.text = "Spanish Definition: " + GameManager.wordsList.wordData[wordNumber].SP_Definition;
+        englishDescription.text ="English Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].EN_Definition;
+        spanishDescription.text = "Spanish Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].SP_Definition;
         analyzePanel.SetActive(true);
     }
 

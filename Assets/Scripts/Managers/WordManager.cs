@@ -85,7 +85,7 @@ public class WordManager : MonoBehaviour
     {
         int num = PlayerPrefs.GetInt("words");
        
-        answerText = GameManager.wordsList.wordData[num].SP_Name;
+        answerText = GameManager.Instance.dataList.DataSet[num].SP_Name;
         for (int i = 0; i < answerText.Length; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
