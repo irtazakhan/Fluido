@@ -291,7 +291,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allSfx: []
-  allMusic: []
+  allMusic:
+  - name: BGM
+    clip: {fileID: 8300000, guid: 39175a50cc6b66e4bbad008572eaf72c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   EffectsSource: {fileID: 869684446}
   MusicSource: {fileID: 1772473170}
 --- !u!4 &893835256
@@ -818,10 +824,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1153741690}
     m_Modifications:
+    - target: {fileID: 488299509507450698, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488299509507450698, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488299509507450698, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488299509507450698, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 890378415153610544, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
+    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3589211521990341786, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_Name
       value: Holder
