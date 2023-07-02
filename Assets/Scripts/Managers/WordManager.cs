@@ -86,12 +86,20 @@ public class WordManager : MonoBehaviour
         int num = PlayerPrefs.GetInt("words");
        
         answerText = GameManager.Instance.dataList.DataSet[num].SP_Name;
+        answerText = answerText.Replace(" ", "");
         for (int i = 0; i < answerText.Length; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
             inputBoxList.Add(inputBox);
         }
 
+        
+        answerText= answerText.Replace("ó", "o");
+        answerText = answerText.Replace("á", "a");
+        answerText = answerText.Replace("é", "e");
+        answerText = answerText.Replace("í", "i");
+        answerText = answerText.Replace("ú", "u");
+        Debug.Log(answerText);
         answerText = answerText.ToUpper();
     }
 
