@@ -392,6 +392,8 @@ MonoBehaviour:
   wordlePanel: {fileID: 957232412}
   analyzePanel: {fileID: 1191914468}
   genderPanel: {fileID: 819984114}
+  wordPicture: {fileID: 1252322837}
+  blank: {fileID: -2413806693520163455, guid: 9eb4e0e6e179f5942b3d54e08c1f61e7, type: 3}
 --- !u!114 &1168387015 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1395970563769617708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
@@ -408,6 +410,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 683536177209098764, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
   m_PrefabInstance: {fileID: 8595704269620696351}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1252322837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5987267391604245636, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 8595704269620696351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1267304177 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
@@ -638,6 +651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9112506910062357554, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -755,6 +772,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
+    - target: {fileID: 5987267391604245636, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987267391604245636, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987267391604245636, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7421322350723229430, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

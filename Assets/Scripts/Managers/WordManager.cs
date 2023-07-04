@@ -36,6 +36,11 @@ public class WordManager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
+        foreach (Button btn in buttons)
+        {
+            btn.image.color = Color.white;
+        }
     }
 
     private IEnumerator InccorectAnswerRoutine()
@@ -99,7 +104,6 @@ public class WordManager : MonoBehaviour
         answerText = answerText.Replace("é", "e");
         answerText = answerText.Replace("í", "i");
         answerText = answerText.Replace("ú", "u");
-        Debug.Log(answerText);
         answerText = answerText.ToUpper();
     }
 
@@ -125,7 +129,6 @@ public class WordManager : MonoBehaviour
     {
         if(inputIndex-1< inputBoxList.Count-1)
         {
-            Debug.Log(inputIndex + "Length Error");
             return;
         }
         for (int i = 0; i < inputBoxList.Count; i++)
@@ -150,7 +153,9 @@ public class WordManager : MonoBehaviour
         {
             int num= PlayerPrefs.GetInt("words");      
             PlayerPrefs.SetInt("words", num+1);
-            StartCoroutine(CorrectAnswerRoutine());         
+            StartCoroutine(CorrectAnswerRoutine());
+
+            
         }
         else
         {          
@@ -160,5 +165,4 @@ public class WordManager : MonoBehaviour
         correctLetters = 0;
     }
     #endregion
-
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System.IO;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,6 +16,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject wordlePanel;
     [SerializeField] GameObject analyzePanel;
     [SerializeField] GameObject genderPanel;
+
+    [SerializeField] Image wordPicture;
+    [SerializeField] Sprite blank;
+    [SerializeField] AudioSource wordAudioSource;
     #endregion
 
 
@@ -21,6 +27,22 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
+
+        Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+        if(wordSprite != null)
+        {
+            wordPicture.color = Color.white;
+            wordPicture.sprite = wordSprite;
+        }
+        else
+        {
+            wordPicture.color = Color.black;
+            wordPicture.sprite = blank;
+        }
+        
+        AudioClip wordAudio= Resources.Load<AudioClip>("Audio/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Audio);
+        wordAudioSource.clip = wordAudio;
+        
     }
     #endregion
 
@@ -30,7 +52,23 @@ public class UIManager : MonoBehaviour
     {
         CloseAllPanel();
         allOptionPanel.SetActive(true);
+
         wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
+       
+        Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+        if (wordSprite != null)
+        {
+            wordPicture.color = Color.white;
+            wordPicture.sprite = wordSprite;
+        }
+        else
+        {
+            wordPicture.color = Color.black;
+            wordPicture.sprite = blank;
+        }
+
+        AudioClip wordAudio = Resources.Load<AudioClip>("Audio/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Audio);
+        wordAudioSource.clip = wordAudio;
     }
 
     public void OpenWordlePanel()
@@ -70,5 +108,11 @@ public class UIManager : MonoBehaviour
         analyzePanel.SetActive(false);
         genderPanel.SetActive(false);
     }
+
+    public void PlayWordAudio()
+    {
+        wordAudioSource.Play();
+    }
+
     #endregion
 }
