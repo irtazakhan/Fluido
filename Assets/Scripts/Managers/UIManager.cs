@@ -84,6 +84,7 @@ public class UIManager : MonoBehaviour
 
     public void PlayAudio()
     {
+        SoundManager.ins.PauseAndResumeMusic(3);
         GameManager.Instance.Instance_TTS.Speak(GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Audio);
     }
     public void OpenGenderPanel()

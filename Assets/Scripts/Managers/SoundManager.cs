@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
@@ -63,10 +64,22 @@ public class SoundManager : MonoBehaviour
         _aS.pitch = sound.pitch;
         _aS.loop = sound.loop;
     }
-    
+    public void PauseAndResumeMusic(float duration)
+    {
+        if (MusicSource.isPlaying)
+        {
+            MusicSource.Pause();
+            StartCoroutine(ResumeAfterDelay(duration));
+        }
+    }
+    private IEnumerator ResumeAfterDelay(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        MusicSource.UnPause();
+    }
     public void StopSfx()
     {
-        EffectsSource.Stop();
+        EffectsSource.Stop(); 
     }
     public void StopMusic()
     {
