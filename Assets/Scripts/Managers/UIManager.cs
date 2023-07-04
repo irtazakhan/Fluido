@@ -19,7 +19,6 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] Image wordPicture;
     [SerializeField] Sprite blank;
-    [SerializeField] AudioSource wordAudioSource;
     #endregion
 
 
@@ -29,7 +28,7 @@ public class UIManager : MonoBehaviour
         wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
 
         Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
-        if(wordSprite != null)
+        if (wordSprite != null)
         {
             wordPicture.color = Color.white;
             wordPicture.sprite = wordSprite;
@@ -38,11 +37,7 @@ public class UIManager : MonoBehaviour
         {
             wordPicture.color = Color.black;
             wordPicture.sprite = blank;
-        }
-        
-        AudioClip wordAudio= Resources.Load<AudioClip>("Audio/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Audio);
-        wordAudioSource.clip = wordAudio;
-        
+        }       
     }
     #endregion
 
@@ -66,9 +61,6 @@ public class UIManager : MonoBehaviour
             wordPicture.color = Color.black;
             wordPicture.sprite = blank;
         }
-
-        AudioClip wordAudio = Resources.Load<AudioClip>("Audio/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Audio);
-        wordAudioSource.clip = wordAudio;
     }
 
     public void OpenWordlePanel()
@@ -108,11 +100,5 @@ public class UIManager : MonoBehaviour
         analyzePanel.SetActive(false);
         genderPanel.SetActive(false);
     }
-
-    public void PlayWordAudio()
-    {
-        wordAudioSource.Play();
-    }
-
     #endregion
 }
