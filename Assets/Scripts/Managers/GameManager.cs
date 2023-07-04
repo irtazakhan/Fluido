@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     //public static WordsList wordsList;
     public DataList dataList;
     public static GameManager Instance;
-    public static UIManager Instance_UI;
+    [HideInInspector] public UIManager Instance_UI;
+    [HideInInspector] public TextToSpeech Instance_TTS;
     #endregion
 
     #region PRIVATE FUNCTIONS
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance_UI = FindAnyObjectByType<UIManager>();
-
+        Instance_TTS = FindAnyObjectByType<TextToSpeech>();
         if (Instance != null)
         {
             Destroy(gameObject);

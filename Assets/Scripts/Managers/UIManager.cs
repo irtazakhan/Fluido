@@ -52,6 +52,10 @@ public class UIManager : MonoBehaviour
         analyzePanel.SetActive(true);
     }
 
+    public void PlayAudio()
+    {
+        GameManager.Instance.Instance_TTS.Speak(GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Audio);
+    }
     public void OpenGenderPanel()
     {
         CloseAllPanel();
