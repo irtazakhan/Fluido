@@ -30,12 +30,10 @@ public class UIManager : MonoBehaviour
         Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
         if (wordSprite != null)
         {
-            wordPicture.color = Color.white;
             wordPicture.sprite = wordSprite;
         }
         else
         {
-            wordPicture.color = Color.black;
             wordPicture.sprite = blank;
         }       
     }
@@ -53,12 +51,10 @@ public class UIManager : MonoBehaviour
         Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
         if (wordSprite != null)
         {
-            wordPicture.color = Color.white;
             wordPicture.sprite = wordSprite;
         }
         else
         {
-            wordPicture.color = Color.black;
             wordPicture.sprite = blank;
         }
     }
