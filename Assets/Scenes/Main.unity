@@ -393,7 +393,7 @@ MonoBehaviour:
   analyzePanel: {fileID: 1191914468}
   genderPanel: {fileID: 819984114}
   wordPicture: {fileID: 1252322837}
-  blank: {fileID: -2413806693520163455, guid: 9eb4e0e6e179f5942b3d54e08c1f61e7, type: 3}
+  blank: {fileID: 21300000, guid: ac79df4bc51ccdf499804d0520ffa896, type: 3}
 --- !u!114 &1168387015 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1395970563769617708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
@@ -811,6 +811,14 @@ PrefabInstance:
     - target: {fileID: 5987267391604245636, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179815752203731485, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_fontSize
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179815752203731485, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 7421322350723229430, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
