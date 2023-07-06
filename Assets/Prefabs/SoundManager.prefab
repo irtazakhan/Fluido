@@ -306,7 +306,7 @@ MonoBehaviour:
   allMusic:
   - name: BGM
     clip: {fileID: 8300000, guid: 39175a50cc6b66e4bbad008572eaf72c, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
