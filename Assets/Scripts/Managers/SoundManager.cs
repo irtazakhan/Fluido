@@ -68,14 +68,16 @@ public class SoundManager : MonoBehaviour
     {
         if (MusicSource.isPlaying)
         {
-            MusicSource.Pause();
+            //MusicSource.Pause();
+            MusicSource.volume = 0.1f;
             StartCoroutine(ResumeAfterDelay(duration));
         }
     }
     private IEnumerator ResumeAfterDelay(float duration)
     {
         yield return new WaitForSeconds(duration);
-        MusicSource.UnPause();
+        MusicSource.volume = 0.6f;
+        //MusicSource.UnPause();
     }
     public void StopSfx()
     {
