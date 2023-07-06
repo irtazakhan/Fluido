@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject analyzePanel;
     [SerializeField] GameObject genderPanel;
     [SerializeField] Animator historyPanelAnimator;
+    [SerializeField] Animator analisePanelAnimator;
 
     [SerializeField] Image wordPicture;
     [SerializeField] Sprite blank;
@@ -91,6 +92,19 @@ public class UIManager : MonoBehaviour
         englishDescription.text ="English Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].EN_Definition;
         spanishDescription.text = "Spanish Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].SP_Definition;
         analyzePanel.SetActive(true);
+        analisePanelAnimator.SetBool("Open", true);
+    }
+
+    public void CloseAnalyzePanel()
+    {
+        analisePanelAnimator.SetBool("Open", false);
+        StartCoroutine(CloseAnalyzePanelRoutine());
+    }
+
+    IEnumerator CloseAnalyzePanelRoutine()
+    {
+        yield return new WaitForSeconds(0.7f);
+        analyzePanel.SetActive(false);
     }
 
     public void PlayAudio()
