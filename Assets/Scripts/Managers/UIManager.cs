@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject wordlePanel;
     [SerializeField] GameObject analyzePanel;
     [SerializeField] GameObject genderPanel;
+    [SerializeField] Animator historyPanelAnimator;
 
     [SerializeField] Image wordPicture;
     [SerializeField] Sprite blank;
@@ -67,7 +68,21 @@ public class UIManager : MonoBehaviour
 
     public void OpenHistoryPanel()
     {
+        
         historyPanel.SetActive(true);
+        historyPanelAnimator.SetBool("Open", true);
+    }
+
+    public void CloseHistoryPanel()
+    {
+        historyPanelAnimator.SetBool("Open", false);
+        StartCoroutine(CloseHistoryPanelRoutine());
+    }
+
+    IEnumerator CloseHistoryPanelRoutine()
+    {
+        yield return new WaitForSeconds(0.7f);
+        historyPanel.SetActive(false);
     }
 
     public void OpenAnalyzePanel()
