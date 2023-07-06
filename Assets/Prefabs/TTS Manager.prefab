@@ -141,4 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e9a533a4e75043a6fc02e82d22373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: -2
+  rate: 0
+  selectedAccent: 1
+  voiceMexico: 1
+  voiceSpain: 0
