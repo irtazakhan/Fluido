@@ -17,6 +17,7 @@ public class Data
     public string SP_Name;
     public int Length;
     public string Type;
+    public int Priority;
     public string EN_Definition;
     public string SP_Definition;
     public string Sprite;

@@ -53,10 +53,11 @@ public class GoogleSheetDataFetcher : MonoBehaviour
             data.SP_Name = values[3];
             data.Length = Convert.ToInt32(values[4]);
             data.Type = values[5];
-            data.EN_Definition = values[6];
-            data.SP_Definition = values[7];
-            data.Sprite = values[8];
-            data.Audio = values[9];
+            data.Priority = Convert.ToInt32(values[6]);
+            data.EN_Definition = values[7];
+            data.SP_Definition = values[8];
+            data.Sprite = values[9];
+            data.Audio = values[10];
 
             dataList.Add(data);
         }
