@@ -117,9 +117,16 @@ public class UIManager : MonoBehaviour
     }
     public void OpenGenderPanel()
     {
-        CloseAllPanel();
-        genderPanel.SetActive(true);
-        genderPanelAnimator.SetBool("Open", true);
+        if(GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Gender==string.Empty)
+        {
+            OpenWordlePanel();
+        }
+        else
+        {
+            CloseAllPanel();
+            genderPanel.SetActive(true);
+            genderPanelAnimator.SetBool("Open", true);
+        } 
     }
 
     public void CloseAllPanel()
