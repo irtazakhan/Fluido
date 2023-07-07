@@ -410,7 +410,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3814,7 +3814,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.00021534205}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 13}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3026441586242543325
 MonoBehaviour:
@@ -3836,10 +3836,10 @@ MonoBehaviour:
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 50, y: 50}
-  m_Spacing: {x: 25, y: 25}
-  m_Constraint: 0
-  m_ConstraintCount: 4
+  m_CellSize: {x: 35, y: 35}
+  m_Spacing: {x: 17, y: 17}
+  m_Constraint: 1
+  m_ConstraintCount: 11
 --- !u!114 &1781624453005863087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5012,6 +5012,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6020661369303400774, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
+      propertyPath: m_Spacing.x
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020661369303400774, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
+      propertyPath: m_Spacing.y
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 6517130385584942731, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
       propertyPath: historyPanel
       value: 
@@ -5070,7 +5078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8245278958675043086, guid: 53e04eecb7f534e4c9e77c23b577dfd5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -607.98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

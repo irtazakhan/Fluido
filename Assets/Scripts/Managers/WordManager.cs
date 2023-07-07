@@ -75,6 +75,23 @@ public class WordManager : MonoBehaviour
     {
         historyPanel.GetComponent<GridLayoutGroup>().constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         historyPanel.GetComponent<GridLayoutGroup>().constraintCount = answerText.Length;
+        
+        if(answerText.Length<8)
+        {
+            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(55, 55);
+            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(25, 25);
+        }
+        else if (answerText.Length >= 8 && answerText.Length<10)
+        {
+            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(45, 45);
+            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(20, 20);
+        }
+        else if (answerText.Length >= 10)
+        {
+            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(35, 35);
+            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(17, 17);
+        }
+
         for (int i = 0; i < inputBoxList.Count; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, historyPanel);
@@ -101,12 +118,21 @@ public class WordManager : MonoBehaviour
        
         answerText = GameManager.Instance.dataList.DataSet[num].SP_Name;
         answerText = answerText.Replace(" ", "");
+
+        if(answerText.Length<10)
+        {
+            inputBoxParent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(48, 48);
+        }
+        else if(answerText.Length>=10)
+        {
+            inputBoxParent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(35, 35);
+        }
+
         for (int i = 0; i < answerText.Length; i++)
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
             inputBoxList.Add(inputBox);
         }
-
         
         answerText= answerText.Replace("ó", "o");
         answerText = answerText.Replace("á", "a");
