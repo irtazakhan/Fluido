@@ -29,6 +29,7 @@ public class UIManager : MonoBehaviour
     #region PRIVATE FUNCTIONS
     private void Start()
     {
+        SoundManager.ins.PlayMusic("Battle");
         wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
 
         Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);

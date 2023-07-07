@@ -303,8 +303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.5231, y: 2.7}
-  m_SizeDelta: {x: 40.7352, y: 36.4704}
+  m_AnchoredPosition: {x: -1.7, y: 3.1}
+  m_SizeDelta: {x: 40.3197, y: 31.4839}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3808535699875943579
 CanvasRenderer:
@@ -786,8 +786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 532.1356, y: -45.997135}
-  m_SizeDelta: {x: 67.9317, y: 70}
+  m_AnchoredPosition: {x: 534.8626, y: -45.997135}
+  m_SizeDelta: {x: 73.3857, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8051203572983000059
 CanvasRenderer:
@@ -3700,6 +3700,10 @@ MonoBehaviour:
   waitingTime: 1
   wordGenderManager: {fileID: 0}
   uiManager: {fileID: 0}
+  wordlePanelAnimator: {fileID: 0}
+  correctLetterColor: {r: 0, g: 0, b: 0, a: 0}
+  incorrectLetterColor: {r: 0, g: 0, b: 0, a: 0}
+  wrongPositionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4327976951731125681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6685,8 +6689,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -46}
-  m_SizeDelta: {x: 75, y: 70}
+  m_AnchoredPosition: {x: 38.75, y: -46}
+  m_SizeDelta: {x: 77.5, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1471943665956420052
 CanvasRenderer:

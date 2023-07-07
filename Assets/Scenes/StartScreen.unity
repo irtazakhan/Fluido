@@ -447,9 +447,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allMusic.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: allMusic.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: cc167646a2d4f1e4c94d6d2f6e1adc50, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allMusic.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 466423e16d4381c418e3b7cfddc622d4, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allMusic.Array.data[1].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allMusic.Array.data[1].name
+      value: Battle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allMusic.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allMusic.Array.data[1].volume
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 9112506910062357554, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: m_Name
       value: SoundManager
