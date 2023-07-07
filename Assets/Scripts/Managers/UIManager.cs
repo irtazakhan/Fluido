@@ -25,6 +25,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] Sprite blank;
     #endregion
 
+    #region PUBLIC VARIABLES
+    public int genderCorrectTimes=0;
+    #endregion
 
     #region PRIVATE FUNCTIONS
     private void Start()

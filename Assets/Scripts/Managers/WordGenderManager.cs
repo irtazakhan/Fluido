@@ -8,11 +8,13 @@ public class WordGenderManager : MonoBehaviour
 {
     #region PRIVATE VARIABLES 
 
-    [SerializeField] Image genderWheelImage;
+    [SerializeField] RectTransform genderWheelImage;
     [SerializeField] Button maleArticleButton;
     [SerializeField] Button femaleArticleButton;
     [SerializeField] UIManager uiManager;
     [SerializeField] Animator genderPanelAnimator;
+
+    [SerializeField] Image[] wheelImages;
 
     private Vector3 startPos;
 
@@ -23,8 +25,10 @@ public class WordGenderManager : MonoBehaviour
     private void OnEnable()
     {
         int num = PlayerPrefs.GetInt("words");
+        
         string gender = GameManager.Instance.dataList.DataSet[num].Gender;
-
+        femaleArticleButton.interactable = true;
+        maleArticleButton.interactable = true;
         maleArticleButton.onClick.RemoveAllListeners();
         femaleArticleButton.onClick.RemoveAllListeners();
         
@@ -34,7 +38,7 @@ public class WordGenderManager : MonoBehaviour
             {
                 CorrectOption(maleArticleButton.GetComponentInChildren<TMP_Text>());   
             });
-            femaleArticleButton.onClick.AddListener(() => OpenWordlepanel());
+            femaleArticleButton.onClick.AddListener(() => IncorrectOption());
         }
         else if (gender == "la")
         {
@@ -42,23 +46,36 @@ public class WordGenderManager : MonoBehaviour
             {
                 CorrectOption(femaleArticleButton.GetComponentInChildren<TMP_Text>());
             });
-            maleArticleButton.onClick.AddListener(() => OpenWordlepanel());
-        }else
+            maleArticleButton.onClick.AddListener(() => IncorrectOption());
+        }
+        else
         {
             OpenWordlepanel();
         }
 
-        startPos = genderWheelImage.rectTransform.position;
+        startPos = genderWheelImage.position;
     }
 
     private void CorrectOption(TMP_Text genderText)
     {
         StartCoroutine(Shake());
-        //genderWheelImage.fillAmount += 1f / 3f;
-        //if (genderWheelImage.fillAmount >= 1)
+        int genderCorrect = uiManager.genderCorrectTimes;
+        uiManager.genderCorrectTimes += 1;
+        
+        if(genderCorrect>=3)
         {
-           // genderText.fontStyle = FontStyles.Bold;
+            genderText.fontStyle = FontStyles.Bold;
         }
+
+        femaleArticleButton.interactable = false;
+        maleArticleButton.interactable = false;
+    }
+
+    private void IncorrectOption()
+    {
+        femaleArticleButton.interactable = false;
+        maleArticleButton.interactable = false;
+        OpenWordlepanel();
     }
 
     private void OpenWordlepanel()
@@ -77,13 +94,29 @@ public class WordGenderManager : MonoBehaviour
     private IEnumerator Shake()
     {
         float time = 0;
-        while(time<1)
+        int wheelNum = uiManager.genderCorrectTimes;
+
+        if(wheelNum<3)
         {
-            genderWheelImage.rectTransform.position += new Vector3(Mathf.Sin(Time.time * 40) * 0.5f, Mathf.Sin(Time.time * 40) * 0.5f);
-            yield return new WaitForSeconds(Time.deltaTime);
-            time += Time.deltaTime;
+            while (time < 1)
+            {
+                genderWheelImage.position += new Vector3(Mathf.Sin(Time.time * 40) * 0.5f, Mathf.Sin(Time.time * 40) * 0.5f);
+               
+                if (wheelImages[wheelNum].rectTransform.localScale.x <= 0)
+                {
+                    wheelImages[wheelNum].rectTransform.localScale = new Vector3(0, 0, 0);
+                }
+                else
+                {
+                    wheelImages[wheelNum].rectTransform.localScale -= new Vector3(0.004f, 0.004f, 0.004f);
+                }
+
+                yield return new WaitForSeconds(Time.deltaTime);
+                time += Time.deltaTime;
+            }
         }
-        genderWheelImage.rectTransform.position = startPos;
+
+        genderWheelImage.position = startPos;
         yield return new WaitForSeconds(0.5f);
         OpenWordlepanel();
     }
