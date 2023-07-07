@@ -18,6 +18,11 @@ public class WordManager : MonoBehaviour
 
     [SerializeField] WordGenderManager wordGenderManager;
     [SerializeField] UIManager uiManager;
+    [SerializeField] Animator wordlePanelAnimator;
+
+    [SerializeField] Color correctLetterColor;
+    [SerializeField] Color incorrectLetterColor;
+    [SerializeField] Color wrongPositionColor;
 
     private int inputIndex;
     private int correctLetters;
@@ -30,6 +35,8 @@ public class WordManager : MonoBehaviour
     {
         yield return new WaitForSeconds(waitingTime);
         AddWordToHistoryList();
+        wordlePanelAnimator.SetBool("Open", false);
+        yield return new WaitForSeconds(0.7f);
         uiManager.OpenMainPanel();
         wordGenderManager.ResetGenderWheel();
         foreach (Transform child in historyPanel.transform)
@@ -48,6 +55,8 @@ public class WordManager : MonoBehaviour
         HighLightKeys();
         yield return new WaitForSeconds(waitingTime);
         AddWordToHistoryList();
+        wordlePanelAnimator.SetBool("Open", false);
+        yield return new WaitForSeconds(0.7f);
         uiManager.OpenMainPanel();
     }
 
@@ -136,16 +145,16 @@ public class WordManager : MonoBehaviour
             string tmptext = inputBoxList[i].GetComponentInChildren<TMP_Text>().text;
             if (tmptext == answerText[i].ToString())
             {
-                inputBoxList[i].color = Color.green;
+                inputBoxList[i].color = correctLetterColor;
                 correctLetters++;
             }
             else if(answerText.Contains(tmptext))
             {
-                inputBoxList[i].color = Color.yellow;
+                inputBoxList[i].color = wrongPositionColor;
             }
             else
             {
-                inputBoxList[i].color = Color.red;
+                inputBoxList[i].color = incorrectLetterColor;
             }
         }
 
@@ -154,8 +163,6 @@ public class WordManager : MonoBehaviour
             int num= PlayerPrefs.GetInt("words");      
             PlayerPrefs.SetInt("words", num+1);
             StartCoroutine(CorrectAnswerRoutine());
-
-            
         }
         else
         {          

@@ -12,6 +12,7 @@ public class WordGenderManager : MonoBehaviour
     [SerializeField] Button maleArticleButton;
     [SerializeField] Button femaleArticleButton;
     [SerializeField] UIManager uiManager;
+    [SerializeField] Animator genderPanelAnimator;
     #endregion
 
     #region PRIVATE FUNCTIONS
@@ -58,8 +59,16 @@ public class WordGenderManager : MonoBehaviour
 
     private void OpenWordlepanel()
     {
+        genderPanelAnimator.SetBool("Open", false);
+        StartCoroutine(GenderPanelCloseRoutine());
+    }
+
+    IEnumerator GenderPanelCloseRoutine()
+    {
+        yield return new WaitForSeconds(0.7f);
         uiManager.OpenWordlePanel();
     }
+
     #endregion
 
     #region PUBLIC FUNCTIONS

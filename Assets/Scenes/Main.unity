@@ -189,6 +189,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6469584634907451221, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
   m_PrefabInstance: {fileID: 8595704269620696351}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &819984121 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2958756219770938358, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 8595704269620696351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &882609996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3246877035403615684, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
@@ -202,6 +207,11 @@ Animator:
 --- !u!1 &957232412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1196540360548948180, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 8595704269620696351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &957232417 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5785432591499900130, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
   m_PrefabInstance: {fileID: 8595704269620696351}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1047142730
@@ -399,6 +409,8 @@ MonoBehaviour:
   genderPanel: {fileID: 819984114}
   historyPanelAnimator: {fileID: 882610000}
   analisePanelAnimator: {fileID: 1191914472}
+  genderPanelAnimator: {fileID: 819984121}
+  wordlePanelAnimator: {fileID: 957232417}
   wordPicture: {fileID: 1530083855}
   blank: {fileID: 21300000, guid: ac79df4bc51ccdf499804d0520ffa896, type: 3}
 --- !u!114 &1168387015 stripped
@@ -619,26 +631,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
-    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1169653212936495708, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1196540360548948180, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2900840852525382123, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -747,10 +739,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153741691}
-    - target: {fileID: 6103248370846935160, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8984533956107298301, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: uiManager
       value: 

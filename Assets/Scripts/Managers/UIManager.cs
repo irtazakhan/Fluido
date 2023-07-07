@@ -18,6 +18,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject genderPanel;
     [SerializeField] Animator historyPanelAnimator;
     [SerializeField] Animator analisePanelAnimator;
+    [SerializeField] Animator genderPanelAnimator;
+    [SerializeField] Animator wordlePanelAnimator;
 
     [SerializeField] Image wordPicture;
     [SerializeField] Sprite blank;
@@ -65,11 +67,11 @@ public class UIManager : MonoBehaviour
     {
         CloseAllPanel();
         wordlePanel.SetActive(true);
+        wordlePanelAnimator.SetBool("Open", true);
     }
 
     public void OpenHistoryPanel()
     {
-        
         historyPanel.SetActive(true);
         historyPanelAnimator.SetBool("Open", true);
     }
@@ -116,6 +118,7 @@ public class UIManager : MonoBehaviour
     {
         CloseAllPanel();
         genderPanel.SetActive(true);
+        genderPanelAnimator.SetBool("Open", true);
     }
 
     public void CloseAllPanel()
