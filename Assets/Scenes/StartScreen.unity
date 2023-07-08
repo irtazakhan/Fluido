@@ -447,8 +447,72 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: allMusic.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: aea6a91d27836f3428a4a43069a81b56, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[0].name
+      value: Atacar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: dea82e2d90306404e92f5a210b202655, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[1].name
+      value: Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fb51abdff2cf34747a0a824280ea34b9, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[2].name
+      value: Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 350f52e02d32f3f4ba1655f4554cc7dc, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[3].name
+      value: Gender Correct
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fa2c855c5b1388542b470c6c4ad306bc, type: 3}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[4].name
+      value: Gender Miss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[4].pitch
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: allMusic.Array.data[0].clip
@@ -465,6 +529,26 @@ PrefabInstance:
     - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: allMusic.Array.data[1].name
       value: Battle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
+      propertyPath: allSfx.Array.data[4].volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: allMusic.Array.data[1].pitch
