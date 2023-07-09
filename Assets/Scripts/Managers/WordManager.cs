@@ -178,7 +178,6 @@ public class WordManager : MonoBehaviour
             }
             else if(answerText.Contains(tmptext))
             {
-                
                 inputBoxList[i].color = wrongPositionColor;
             }
             else

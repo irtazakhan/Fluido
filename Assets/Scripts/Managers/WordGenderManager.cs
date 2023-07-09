@@ -124,7 +124,7 @@ public class WordGenderManager : MonoBehaviour
                 }
                 else
                 {
-                    wheelImages[wheelNum].rectTransform.localScale += new Vector3(0.007f, 0.007f, 0.007f);
+                    wheelImages[wheelNum].rectTransform.localScale += new Vector3(0.055f, 0.055f, 0.055f);
                 }
 
                 yield return new WaitForSeconds(Time.deltaTime);
