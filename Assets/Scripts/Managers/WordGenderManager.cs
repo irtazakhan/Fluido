@@ -13,7 +13,7 @@ public class WordGenderManager : MonoBehaviour
     [SerializeField] Button femaleArticleButton;
     [SerializeField] UIManager uiManager;
     [SerializeField] Animator genderPanelAnimator;
-
+    [SerializeField] float gapBetweenSounds=0.3f;
     [SerializeField] Image[] wheelImages;
 
     private Vector3 startPos;
@@ -58,7 +58,8 @@ public class WordGenderManager : MonoBehaviour
 
     private void CorrectOption(TMP_Text genderText)
     {
-        SoundManager.ins.PlaySfx("Gender Correct");
+        SoundManager.ins.PlaySfx("Atacar");
+        
         StartCoroutine(Shake());
         int genderCorrect = uiManager.genderCorrectTimes;
         uiManager.genderCorrectTimes += 1;
@@ -74,6 +75,13 @@ public class WordGenderManager : MonoBehaviour
 
     private void IncorrectOption()
     {
+        SoundManager.ins.PlaySfx("Atacar");
+        StartCoroutine(GenderInccorectRoutine());
+    }
+
+    IEnumerator GenderInccorectRoutine()
+    {
+        yield return new WaitForSeconds(gapBetweenSounds);
         SoundManager.ins.PlaySfx("Gender Miss");
         femaleArticleButton.interactable = false;
         maleArticleButton.interactable = false;
@@ -88,17 +96,21 @@ public class WordGenderManager : MonoBehaviour
 
     IEnumerator GenderPanelCloseRoutine()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(gapBetweenSounds);
         uiManager.OpenWordlePanel();
     }
 
 
     private IEnumerator Shake()
     {
+        
         float time = 0;
         int wheelNum = uiManager.genderCorrectTimes;
 
-        if(wheelNum<3)
+        yield return new WaitForSeconds(0.3f);
+        SoundManager.ins.PlaySfx("Gender Correct");
+
+        if (wheelNum<3)
         {
             float directionX = Random.Range(-1f, 1f);
             float directionY = Random.Range(-0.5f, 0.5f);
@@ -119,7 +131,7 @@ public class WordGenderManager : MonoBehaviour
                 time += Time.deltaTime;
             }
         }
-
+        
         genderWheelImage.position = startPos;
         yield return new WaitForSeconds(0.5f);
         OpenWordlepanel();

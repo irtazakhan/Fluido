@@ -33,6 +33,7 @@ public class WordManager : MonoBehaviour
 
     private IEnumerator CorrectAnswerRoutine()
     {
+        SoundManager.ins.PlaySfx("Wordle Complete");
         yield return new WaitForSeconds(waitingTime);
         AddWordToHistoryList();
         wordlePanelAnimator.SetBool("Open", false);
@@ -161,6 +162,7 @@ public class WordManager : MonoBehaviour
 
     public void SubmitWord()
     {
+        int correctLetter = 0;
         if(inputIndex-1< inputBoxList.Count-1)
         {
             return;
@@ -170,16 +172,27 @@ public class WordManager : MonoBehaviour
             string tmptext = inputBoxList[i].GetComponentInChildren<TMP_Text>().text;
             if (tmptext == answerText[i].ToString())
             {
+                correctLetter++;
                 inputBoxList[i].color = correctLetterColor;
                 correctLetters++;
             }
             else if(answerText.Contains(tmptext))
             {
+                
                 inputBoxList[i].color = wrongPositionColor;
             }
             else
             {
                 inputBoxList[i].color = incorrectLetterColor;
+            }
+
+            if(correctLetter<answerText.Length)
+            {
+                SoundManager.ins.PlaySfx("Wordle Correct");
+            }
+            else if(correctLetter==0)
+            {
+                SoundManager.ins.PlaySfx("Gender Miss");
             }
         }
 
