@@ -174,7 +174,7 @@ public class WordManager : MonoBehaviour
             {
                 correctLetter++;
                 inputBoxList[i].color = correctLetterColor;
-                correctLetters++;
+                
             }
             else if(answerText.Contains(tmptext))
             {
@@ -185,7 +185,7 @@ public class WordManager : MonoBehaviour
                 inputBoxList[i].color = incorrectLetterColor;
             }
 
-            if(correctLetter<answerText.Length)
+            if(correctLetter<answerText.Length && correctLetter>0)
             {
                 SoundManager.ins.PlaySfx("Wordle Correct");
             }
@@ -195,7 +195,7 @@ public class WordManager : MonoBehaviour
             }
         }
 
-        if(correctLetters==answerText.Length)
+        if(correctLetter == answerText.Length)
         {
             int num= PlayerPrefs.GetInt("words");      
             PlayerPrefs.SetInt("words", num+1);
@@ -206,7 +206,7 @@ public class WordManager : MonoBehaviour
             StartCoroutine(InccorectAnswerRoutine());
         }
         inputIndex = 0;
-        correctLetters = 0;
+        
     }
     #endregion
 }
