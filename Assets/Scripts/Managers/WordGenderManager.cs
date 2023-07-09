@@ -58,6 +58,7 @@ public class WordGenderManager : MonoBehaviour
 
     private void CorrectOption(TMP_Text genderText)
     {
+        SoundManager.ins.PlaySfx("Gender Correct");
         StartCoroutine(Shake());
         int genderCorrect = uiManager.genderCorrectTimes;
         uiManager.genderCorrectTimes += 1;
@@ -73,6 +74,7 @@ public class WordGenderManager : MonoBehaviour
 
     private void IncorrectOption()
     {
+        SoundManager.ins.PlaySfx("Gender Miss");
         femaleArticleButton.interactable = false;
         maleArticleButton.interactable = false;
         OpenWordlepanel();
@@ -98,17 +100,19 @@ public class WordGenderManager : MonoBehaviour
 
         if(wheelNum<3)
         {
+            float directionX = Random.Range(-1f, 1f);
+            float directionY = Random.Range(-0.5f, 0.5f);
             while (time < 1)
             {
-                genderWheelImage.position += new Vector3(Mathf.Sin(Time.time * 40) * 0.5f, Mathf.Sin(Time.time * 40) * 0.5f);
+                genderWheelImage.position += new Vector3(Mathf.Sin(Time.time * 40) * directionX, Mathf.Sin(Time.time * 40) * directionY);
                
-                if (wheelImages[wheelNum].rectTransform.localScale.x <= 0)
+                if (wheelImages[wheelNum].rectTransform.localScale.x >= 1)
                 {
-                    wheelImages[wheelNum].rectTransform.localScale = new Vector3(0, 0, 0);
+                    wheelImages[wheelNum].rectTransform.localScale = new Vector3(1, 1, 1);
                 }
                 else
                 {
-                    wheelImages[wheelNum].rectTransform.localScale -= new Vector3(0.004f, 0.004f, 0.004f);
+                    wheelImages[wheelNum].rectTransform.localScale += new Vector3(0.007f, 0.007f, 0.007f);
                 }
 
                 yield return new WaitForSeconds(Time.deltaTime);
@@ -128,6 +132,13 @@ public class WordGenderManager : MonoBehaviour
     public void ResetGenderWheel()
     {
         //genderWheelImage.fillAmount = 0;
+
+        uiManager.genderCorrectTimes = 0;
+        for (int i = 0; i < wheelImages.Length; i++)
+        {
+            wheelImages[i].transform.localScale = Vector3.zero;
+        }
+
         maleArticleButton.onClick.RemoveAllListeners();
         femaleArticleButton.onClick.RemoveAllListeners();
         maleArticleButton.GetComponentInChildren<TMP_Text>().fontStyle = FontStyles.Normal;

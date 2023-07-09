@@ -407,6 +407,7 @@ MonoBehaviour:
   wordlePanel: {fileID: 957232412}
   analyzePanel: {fileID: 1191914468}
   genderPanel: {fileID: 819984114}
+  genderImageObject: {fileID: 8595704269620696353}
   historyPanelAnimator: {fileID: 882610000}
   analisePanelAnimator: {fileID: 1191914472}
   genderPanelAnimator: {fileID: 819984121}
@@ -764,3 +765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8595704269620696353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6926511702861878870, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 8595704269620696351}
+  m_PrefabAsset: {fileID: 0}

@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject wordlePanel;
     [SerializeField] GameObject analyzePanel;
     [SerializeField] GameObject genderPanel;
+    [SerializeField] GameObject genderImageObject;
     [SerializeField] Animator historyPanelAnimator;
     [SerializeField] Animator analisePanelAnimator;
     [SerializeField] Animator genderPanelAnimator;
@@ -76,12 +77,14 @@ public class UIManager : MonoBehaviour
 
     public void OpenHistoryPanel()
     {
+        SoundManager.ins.PlaySfx("Open");
         historyPanel.SetActive(true);
         historyPanelAnimator.SetBool("Open", true);
     }
 
     public void CloseHistoryPanel()
     {
+        SoundManager.ins.PlaySfx("Close");
         historyPanelAnimator.SetBool("Open", false);
         StartCoroutine(CloseHistoryPanelRoutine());
     }
@@ -94,6 +97,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenAnalyzePanel()
     {
+        SoundManager.ins.PlaySfx("Open");
         int wordNumber = PlayerPrefs.GetInt("words");
         englishDescription.text ="English Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].EN_Definition;
         spanishDescription.text = "Spanish Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].SP_Definition;
@@ -103,6 +107,7 @@ public class UIManager : MonoBehaviour
 
     public void CloseAnalyzePanel()
     {
+        SoundManager.ins.PlaySfx("Close");
         analisePanelAnimator.SetBool("Open", false);
         StartCoroutine(CloseAnalyzePanelRoutine());
     }
@@ -120,13 +125,16 @@ public class UIManager : MonoBehaviour
     }
     public void OpenGenderPanel()
     {
+        SoundManager.ins.PlaySfx("Atacar");
         if(GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Gender==string.Empty)
         {
+            genderImageObject.SetActive(false);
             OpenWordlePanel();
         }
         else
         {
             CloseAllPanel();
+            genderImageObject.SetActive(true);
             genderPanel.SetActive(true);
             genderPanelAnimator.SetBool("Open", true);
         } 
