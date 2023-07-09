@@ -754,6 +754,14 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1153741691}
+    - target: {fileID: 4274887806795923915, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dacf25b300422644b969feab005251a1, type: 2}
+    - target: {fileID: 4274887806795923915, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
