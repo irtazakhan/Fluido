@@ -15,6 +15,7 @@ public class WordGenderManager : MonoBehaviour
     [SerializeField] Animator genderPanelAnimator;
     [SerializeField] float gapBetweenSounds=0.3f;
     [SerializeField] Image[] wheelImages;
+    [SerializeField] int shakeFactor=2;
 
     private Vector3 startPos;
 
@@ -112,13 +113,13 @@ public class WordGenderManager : MonoBehaviour
 
         if (wheelNum<3)
         {
-            float directionX;
-            float directionY;
+            float directionX=1;
+            float directionY=1;
             while (time < 1)
             {
-                directionX = Random.Range(-1f, 1f);
-                directionY = Random.Range(-0.5f, 0.5f);
-                genderWheelImage.position += new Vector3(Mathf.Sin(Time.time * 40) * directionX, Mathf.Sin(Time.time * 40) * directionY);
+                directionX = Random.Range( -1f , 1f);
+                directionY = Random.Range(-1f, 1f);
+                genderWheelImage.position =startPos+ new Vector3(directionX*shakeFactor,directionY*shakeFactor);
                
                 if (wheelImages[wheelNum].rectTransform.localScale.x >= 1)
                 {
@@ -132,9 +133,11 @@ public class WordGenderManager : MonoBehaviour
                 yield return new WaitForSeconds(Time.deltaTime);
                 time += Time.deltaTime;
             }
+
+            genderWheelImage.position = startPos;
         }
         
-        genderWheelImage.position = startPos;
+       // genderWheelImage.position = startPos;
         yield return new WaitForSeconds(0.5f);
         OpenWordlepanel();
     }

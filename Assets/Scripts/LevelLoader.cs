@@ -14,7 +14,7 @@ public class LevelLoader : MonoBehaviour
     float time = 0;
     private void Start()
     {
-        time = 0;
+        //time = 0;
     }
     public void LoadGame()
     {
@@ -26,17 +26,16 @@ public class LevelLoader : MonoBehaviour
         while (time < blinkTime)
         {
             Color textColor = startText.color;
-            time += Time.deltaTime*10;
+            time += Time.deltaTime;
             if (textColor.a == 0)
             {
                 startText.color = new Color(textColor.r, textColor.g, textColor.b, 1);
-                yield return new WaitForSeconds(blinkRate);
             }
             else
             {
                 startText.color = new Color(textColor.r, textColor.g, textColor.b, 0);
-                yield return new WaitForSeconds(blinkRate);
             }
+            yield return new WaitForSeconds(blinkRate);
         }
         yield return new WaitForSeconds(0.2f);
         fadeAnimator.SetBool("FadeIn", true);

@@ -3153,6 +3153,7 @@ MonoBehaviour:
   - {fileID: 6630431116552878009}
   - {fileID: 1653925959162600650}
   - {fileID: 7720950999355607397}
+  shakeFactor: 3
 --- !u!95 &2958756219770938358
 Animator:
   serializedVersion: 5
