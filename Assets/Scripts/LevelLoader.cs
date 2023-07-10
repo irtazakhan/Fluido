@@ -18,6 +18,7 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadGame()
     {
+        SoundManager.ins.PlaySfx("Atacar");
         StartCoroutine(ColorChangeRoutine());
     }
 
