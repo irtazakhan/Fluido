@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeAnimator: {fileID: 1618081003}
   startText: {fileID: 1189110029}
-  blinkTime: 0.5
+  blinkTime: 0.3
   blinkRate: 0.07
 --- !u!4 &84948730
 Transform:
