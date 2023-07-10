@@ -26,7 +26,7 @@ public class LevelLoader : MonoBehaviour
         while (time < blinkTime)
         {
             Color textColor = startText.color;
-            time += Time.deltaTime;
+            time += 0.05f;
             if (textColor.a == 0)
             {
                 startText.color = new Color(textColor.r, textColor.g, textColor.b, 1);
