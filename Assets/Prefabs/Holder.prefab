@@ -1413,8 +1413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85490197}
-  m_EffectDistance: {x: 1.5, y: -1.5}
+  m_EffectColor: {r: 0.31132078, g: 0.102293774, b: 0.02202741, a: 0.85490197}
+  m_EffectDistance: {x: 0, y: 6}
   m_UseGraphicAlpha: 1
 --- !u!1 &2855572081109654478
 GameObject:
@@ -1700,8 +1700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5294118}
-  m_EffectDistance: {x: 1, y: -1}
+  m_EffectColor: {r: 0.3254902, g: 0.121568635, b: 0.043137256, a: 1}
+  m_EffectDistance: {x: 6, y: 6}
   m_UseGraphicAlpha: 1
 --- !u!1 &3246877035403615684
 GameObject:
@@ -3975,6 +3975,7 @@ GameObject:
   - component: {fileID: 7786203529660172272}
   - component: {fileID: 284826235716840534}
   - component: {fileID: 6285040600730077232}
+  - component: {fileID: 8799379441541287715}
   m_Layer: 5
   m_Name: BottomLabel
   m_TagString: Untagged
@@ -4040,6 +4041,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8799379441541287715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530224119049536551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.31132078, g: 0.26795432, b: 0.2599235, a: 1}
+  m_EffectDistance: {x: 0, y: 6}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7573790594911720263
 GameObject:
   m_ObjectHideFlags: 0
@@ -4994,6 +5010,7 @@ GameObject:
   - component: {fileID: 7695467414484622466}
   - component: {fileID: 2855555618951165049}
   - component: {fileID: 2900840852525382123}
+  - component: {fileID: 2315569512484682330}
   m_Layer: 5
   m_Name: Audio Button
   m_TagString: Untagged
@@ -5050,7 +5067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: def864b66a7fa0340b3054c30ab92c36, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: 9eb4e0e6e179f5942b3d54e08c1f61e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5116,6 +5133,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2315569512484682330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379478662640470365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8417230234796354710
 GameObject:
   m_ObjectHideFlags: 0
