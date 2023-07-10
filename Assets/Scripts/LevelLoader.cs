@@ -26,6 +26,7 @@ public class LevelLoader : MonoBehaviour
         while (time < blinkTime)
         {
             Color textColor = startText.color;
+            time += Time.deltaTime*10;
             if (textColor.a == 0)
             {
                 startText.color = new Color(textColor.r, textColor.g, textColor.b, 1);
@@ -36,8 +37,6 @@ public class LevelLoader : MonoBehaviour
                 startText.color = new Color(textColor.r, textColor.g, textColor.b, 0);
                 yield return new WaitForSeconds(blinkRate);
             }
-
-            time += Time.deltaTime;
         }
         yield return new WaitForSeconds(0.2f);
         fadeAnimator.SetBool("FadeIn", true);
