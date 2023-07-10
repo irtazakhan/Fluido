@@ -112,10 +112,12 @@ public class WordGenderManager : MonoBehaviour
 
         if (wheelNum<3)
         {
-            float directionX = Random.Range(-1f, 1f);
-            float directionY = Random.Range(-0.5f, 0.5f);
+            float directionX;
+            float directionY;
             while (time < 1)
             {
+                directionX = Random.Range(-1f, 1f);
+                directionY = Random.Range(-0.5f, 0.5f);
                 genderWheelImage.position += new Vector3(Mathf.Sin(Time.time * 40) * directionX, Mathf.Sin(Time.time * 40) * directionY);
                
                 if (wheelImages[wheelNum].rectTransform.localScale.x >= 1)
