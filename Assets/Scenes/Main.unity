@@ -754,6 +754,14 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1153741691}
+    - target: {fileID: 3947450343574666025, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: shakeFactor
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134892690086592099, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
