@@ -304,7 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allSfx:
   - name: Atacar
-    clip: {fileID: 8300000, guid: aea6a91d27836f3428a4a43069a81b56, type: 3}
+    clip: {fileID: 8300000, guid: 3a017c2e04daa3141b1dcd25bdb29d2d, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Gender Correct
-    clip: {fileID: 8300000, guid: 350f52e02d32f3f4ba1655f4554cc7dc, type: 3}
+    clip: {fileID: 8300000, guid: b30c8f1222382b245a7a9dcc3ceb14d6, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -341,6 +341,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Wordle Complete
     clip: {fileID: 8300000, guid: 75d2b44d40d3e084da4b557ea9b1bcbf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Empezar
+    clip: {fileID: 8300000, guid: 1c9a488f286c22848a9a233ca6e30721, type: 3}
     volume: 1
     pitch: 1
     loop: 0

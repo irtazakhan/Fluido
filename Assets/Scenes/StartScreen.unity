@@ -523,10 +523,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8287355154555015237, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
-      propertyPath: allSfx.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3a017c2e04daa3141b1dcd25bdb29d2d, type: 3}
     - target: {fileID: 9112506910062357554, guid: b5c839791ca287c4c88b8068e2986839, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -1505,7 +1501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.8396912, y: -161.17776}
+  m_AnchoredPosition: {x: 2.8397217, y: -161.17776}
   m_SizeDelta: {x: -132.9363, y: 156.7739}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827075814
