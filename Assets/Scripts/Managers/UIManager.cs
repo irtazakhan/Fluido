@@ -36,14 +36,14 @@ public class UIManager : MonoBehaviour
         SoundManager.ins.PlayMusic("Battle");
         wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
 
-        Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
-        if (wordSprite != null)
+        //Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+       //if (wordSprite != null)
         {
-            wordPicture.sprite = wordSprite;
+           // wordPicture.sprite = wordSprite;
         }
-        else
+       // else
         {
-            wordPicture.sprite = blank;
+           // wordPicture.sprite = blank;
         }       
     }
     #endregion
@@ -57,14 +57,14 @@ public class UIManager : MonoBehaviour
 
         wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
        
-        Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
-        if (wordSprite != null)
+        //Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+       // if (wordSprite != null)
         {
-            wordPicture.sprite = wordSprite;
+            //wordPicture.sprite = wordSprite;
         }
-        else
+       // else
         {
-            wordPicture.sprite = blank;
+           // wordPicture.sprite = blank;
         }
     }
 
