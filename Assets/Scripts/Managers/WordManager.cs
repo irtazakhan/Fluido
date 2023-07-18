@@ -14,6 +14,7 @@ public class WordManager : MonoBehaviour
     [SerializeField] Image inputBoxPrefab;
     [SerializeField] Transform inputBoxParent;
     [SerializeField] Transform historyPanel;
+    [SerializeField] Transform lastInputparent;
     [SerializeField] float waitingTime=1f;
 
     [SerializeField] WordGenderManager wordGenderManager;
@@ -44,6 +45,10 @@ public class WordManager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+        foreach (Transform child in lastInputparent.transform)
+        {
+            Destroy(child.gameObject);
+        }
 
         foreach (Button btn in buttons)
         {
@@ -55,6 +60,7 @@ public class WordManager : MonoBehaviour
     {
         HighLightKeys();
         yield return new WaitForSeconds(waitingTime);
+        AddLastWord();
         AddWordToHistoryList();
         wordlePanelAnimator.SetBool("Open", false);
         yield return new WaitForSeconds(0.7f);
@@ -103,6 +109,22 @@ public class WordManager : MonoBehaviour
         inputBoxList.Clear();
     }
 
+    private void AddLastWord()
+    {
+        foreach (Transform child in lastInputparent.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        for (int i = 0; i < inputBoxList.Count; i++)
+        {
+            Image inputBox = Instantiate(inputBoxPrefab, lastInputparent);
+            inputBox.GetComponentInChildren<TMP_Text>().text = GetTextFromInputBox(inputBoxList[i]);
+            inputBox.color = inputBoxList[i].color;
+            inputBox.gameObject.SetActive(false);
+        }
+    }
+
     private string GetTextFromInputBox(Image inputBox)
     {
         string text = inputBox.GetComponentInChildren<TMP_Text>().text;
@@ -132,6 +154,14 @@ public class WordManager : MonoBehaviour
         {
             Image inputBox = Instantiate(inputBoxPrefab, inputBoxParent);
             inputBoxList.Add(inputBox);
+        }
+
+        if(lastInputparent.childCount>0)
+        {
+            foreach (Transform input in lastInputparent)
+            {
+                input.gameObject.SetActive(true);
+            }
         }
         
         answerText= answerText.Replace("ó", "o");
