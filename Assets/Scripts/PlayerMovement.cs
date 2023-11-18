@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
                 // Optional: Update Animator parameters for movement
-                UpdateAnimator(targetPosition - transform.position);
+              //  UpdateAnimator(targetPosition - transform.position);
             }
         }
        
