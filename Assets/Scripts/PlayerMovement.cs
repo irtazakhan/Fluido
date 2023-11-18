@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            //if (hit.collider != null && hit.collider.gameObject == gameObject)
+            //{
             Collider2D collider = Physics2D.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             if (collider != null && collider.gameObject == gameObject)
             {
