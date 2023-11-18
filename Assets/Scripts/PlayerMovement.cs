@@ -3,41 +3,50 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private bool isDragging = false;
-    private Vector3 offset;
-    public float moveSpeed = 3f; 
+    private Vector3 targetPosition;
+    public float moveSpeed = 3f; // Adjust the move speed as needed
+
+    public bool canMove = true;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(canMove)
         {
-            //RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            //if (hit.collider != null && hit.collider.gameObject == gameObject)
-            //{
-            Collider2D collider = Physics2D.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            if (collider != null && collider.gameObject == gameObject)
+            if (Input.GetMouseButtonDown(0))
             {
+                // Start dragging
                 isDragging = true;
-                offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                // Convert screen point to world point
+                targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                targetPosition.z = transform.position.z; // Maintain the same z-coordinate
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                // Stop dragging
+                isDragging = false;
+            }
+
+            if (isDragging)
+            {
+                // Convert screen point to world point continuously
+                targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                targetPosition.z = transform.position.z; // Maintain the same z-coordinate
+
+                // Move the player towards the dragged position
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+
+                // Optional: Update Animator parameters for movement
+                UpdateAnimator(targetPosition - transform.position);
             }
         }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            isDragging = false;
-        }
-
-        if (isDragging)
-        {
-            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
-            targetPosition.z = transform.position.z; // Maintain the same z-coordinate
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-
-           // UpdateAnimator(targetPosition - transform.position);
-        }
+       
     }
 
     private void UpdateAnimator(Vector3 moveDirection)
     {
+        // Optional: Update Animator parameters for movement
         Animator animator = GetComponent<Animator>();
         if (animator != null)
         {
