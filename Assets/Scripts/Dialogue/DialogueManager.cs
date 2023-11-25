@@ -17,17 +17,21 @@ public class DialogueManager : MonoBehaviour
 	private string currentSentence;
 	private Coroutine typeSentenceRoutine;
 
+	public Animator animator;
+	public AudioSource aS;
+
 	void Start()
 	{
 		sentences = new Queue<string>();
 		isDialogueEnded = false;
+		animator.SetBool("IsOpen", false);
 	}
 
 	private void Update()
 	{
 		if (sentences != null)
 		{
-			if (Input.GetKeyDown(KeyCode.E))
+			if (Input.GetKeyDown(KeyCode.E) && animator.GetBool("IsOpen") )
 			{
 				DisplayNextSentence();
 			}
@@ -39,7 +43,7 @@ public class DialogueManager : MonoBehaviour
 
 		isDialogueEnded = false;
 		nameText.text = dialogue.name;
-
+		animator.SetBool("IsOpen", true);
 		sentences.Clear();
 
 		foreach (string sentence in dialogue.sentences)
@@ -81,16 +85,25 @@ public class DialogueManager : MonoBehaviour
 	{
 		isSentenceEnded = false;
 		dialogueText.text = "";
+		yield return new WaitForSeconds(0.15f);
 		foreach (char letter in sentence.ToCharArray())
 		{			
 			dialogueText.text += letter;
-			yield return new WaitForSeconds(0.5f);
+			yield return new WaitForSeconds(0.1f);
 		}
 		isSentenceEnded = true;
 	}
 
-	void EndDialogue()
+	public void EndDialogue()
 	{
+		if(sentences.Count>0)
+        {
+			sentences.Clear();
+        }
 
+		animator.SetBool("IsOpen", false);
+		
+		isSentenceEnded = true;
+		isDialogueEnded = true;
 	}
 }

@@ -8,10 +8,13 @@ public class AIController : MonoBehaviour
     [SerializeField] TMP_Text messageText;
     [SerializeField] string message;
 
+    public Dialogue dialogue;
+    public DialogueManager dialogueManager;
+
     private void Start()
     {
-        messageText.text = message;
-        messageText.gameObject.SetActive(false);
+      
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,6 +35,15 @@ public class AIController : MonoBehaviour
 
     private void Interact(bool show)
     {
-        messageText.gameObject.SetActive(show);
+        // Start Dialgoue
+        if(show)
+        {
+            dialogueManager.StartDialogue(dialogue);
+        }
+        else
+        {
+            dialogueManager.EndDialogue();
+        }
+       
     }
 }
