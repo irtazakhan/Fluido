@@ -7,10 +7,16 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 3f; // Adjust the move speed as needed
 
     public bool canMove = true;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
-        if(canMove)
+        if (canMove)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -38,21 +44,23 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
                 // Optional: Update Animator parameters for movement
-              //  UpdateAnimator(targetPosition - transform.position);
+                UpdateAnimator(targetPosition - transform.position);
+            }
+            else
+            {
+                UpdateAnimator(Vector3.zero);
             }
         }
-       
-    }
 
-    private void UpdateAnimator(Vector3 moveDirection)
+    }
+    void UpdateAnimator(Vector3 direction)
     {
-        // Optional: Update Animator parameters for movement
-        Animator animator = GetComponent<Animator>();
-        if (animator != null)
-        {
-            animator.SetFloat("Horizontal", moveDirection.x);
-            animator.SetFloat("Vertical", moveDirection.y);
-            animator.SetFloat("Speed", moveDirection.sqrMagnitude);
-        }
+
+        // Normalize the direction vector to get a unit vector
+        direction.Normalize();
+
+        // Set Animator parameters based on the movement direction
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
     }
 }
