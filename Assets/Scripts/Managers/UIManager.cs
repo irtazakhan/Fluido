@@ -16,11 +16,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject wordlePanel;
     [SerializeField] GameObject analyzePanel;
     [SerializeField] GameObject genderPanel;
+    [SerializeField] GameObject phoenPanel;
     [SerializeField] GameObject genderImageObject;
     [SerializeField] Animator historyPanelAnimator;
     [SerializeField] Animator analisePanelAnimator;
     [SerializeField] Animator genderPanelAnimator;
     [SerializeField] Animator wordlePanelAnimator;
+    [SerializeField] Animator phonePanelAnimator;
 
     [SerializeField] Image wordPicture;
     [SerializeField] Sprite blank;
@@ -110,6 +112,24 @@ public class UIManager : MonoBehaviour
         SoundManager.ins.PlaySfx("Close");
         analisePanelAnimator.SetBool("Open", false);
         StartCoroutine(CloseAnalyzePanelRoutine());
+    }
+
+    public void OpenPhonePanel()
+    {
+        phoenPanel.SetActive(true);
+        phonePanelAnimator.SetBool("IsOpen", true);
+    }
+
+    public void ClosePhonePanel()
+    {
+        phonePanelAnimator.SetBool("IsOpen", false);
+        StartCoroutine(ClosePhonePanelRoutine());
+    }
+
+    IEnumerator ClosePhonePanelRoutine()
+    {
+        yield return new WaitForSeconds(0.7f);
+        phoenPanel.SetActive(false);
     }
 
     IEnumerator CloseAnalyzePanelRoutine()

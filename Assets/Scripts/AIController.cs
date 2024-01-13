@@ -7,6 +7,7 @@ public class AIController : MonoBehaviour
 {
     [SerializeField] TMP_Text messageText;
     [SerializeField] string message;
+    
 
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
@@ -43,6 +44,7 @@ public class AIController : MonoBehaviour
         else
         {
             dialogueManager.EndDialogue();
+           
         }
        
     }
