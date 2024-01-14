@@ -43,7 +43,7 @@ public class AIController : MonoBehaviour
         }
         else
         {
-            dialogueManager.EndDialogue();
+            dialogueManager.EndDialogue(show);
            
         }
        

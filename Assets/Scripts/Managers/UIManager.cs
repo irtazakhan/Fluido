@@ -128,7 +128,7 @@ public class UIManager : MonoBehaviour
 
     IEnumerator ClosePhonePanelRoutine()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1f);
         phoenPanel.SetActive(false);
     }
 

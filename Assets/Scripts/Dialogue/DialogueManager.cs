@@ -27,16 +27,6 @@ public class DialogueManager : MonoBehaviour
 		animator.SetBool("IsOpen", false);
 	}
 
-	private void Update()
-	{
-		if (sentences != null)
-		{
-			if (Input.GetKeyDown(KeyCode.E) && animator.GetBool("IsOpen") )
-			{
-				DisplayNextSentence();
-			}
-		}
-	}
 
 	public void StartDialogue(Dialogue dialogue)
 	{
@@ -60,7 +50,7 @@ public class DialogueManager : MonoBehaviour
         {
 			if (sentences.Count == 0)
 			{
-				EndDialogue();
+				EndDialogue(true);
 				return;
 			}
 
@@ -94,7 +84,7 @@ public class DialogueManager : MonoBehaviour
 		isSentenceEnded = true;
 	}
 
-	public void EndDialogue()
+	public void EndDialogue(bool interaction)
 	{
 		if(sentences.Count>0)
         {
@@ -102,8 +92,18 @@ public class DialogueManager : MonoBehaviour
         }
 
 		animator.SetBool("IsOpen", false);
+		if(interaction)
+		{
+            StartCoroutine(ShowPhonePanelRoutine());
+        }
 		
 		isSentenceEnded = true;
 		isDialogueEnded = true;
 	}
+
+	IEnumerator ShowPhonePanelRoutine()
+	{
+		yield return new WaitForSeconds(0.5f);
+        GameManager.Instance.Instance_UI.OpenPhonePanel();
+    }
 }

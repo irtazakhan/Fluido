@@ -35,10 +35,13 @@ public class WordManager : MonoBehaviour
     private IEnumerator CorrectAnswerRoutine()
     {
         SoundManager.ins.PlaySfx("Wordle Complete");
+
         yield return new WaitForSeconds(waitingTime);
+        
         AddWordToHistoryList();
         wordlePanelAnimator.SetBool("Open", false);
         yield return new WaitForSeconds(0.7f);
+        uiManager.ClosePhonePanel();
         uiManager.OpenMainPanel();
         wordGenderManager.ResetGenderWheel();
         foreach (Transform child in historyPanel.transform)
@@ -54,6 +57,7 @@ public class WordManager : MonoBehaviour
         {
             btn.image.color = Color.white;
         }
+       
     }
 
     private IEnumerator InccorectAnswerRoutine()
