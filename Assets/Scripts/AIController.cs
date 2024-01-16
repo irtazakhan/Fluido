@@ -23,6 +23,7 @@ public class AIController : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Interact(true);
+            GameManager.Instance.Instance_TTS.Speak(dialogue.sentences[0]);
         }
     }
 
