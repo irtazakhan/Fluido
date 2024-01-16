@@ -149,7 +149,7 @@ MonoBehaviour:
   dialogue:
     name: NPC 1
     sentences:
-    - Hola Amigo
+    - Hola Amigo!
   dialogueManager: {fileID: 0}
 --- !u!95 &8324030272135734621
 Animator:
