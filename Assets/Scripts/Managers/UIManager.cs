@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         SoundManager.ins.PlayMusic("Battle");
-        wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
+        //wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
 
         //Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
        //if (wordSprite != null)
@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
         CloseAllPanel();
         allOptionPanel.SetActive(true);
 
-        wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
+        //wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
        
         //Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
        // if (wordSprite != null)
@@ -116,6 +116,10 @@ public class UIManager : MonoBehaviour
 
     public void OpenPhonePanel()
     {
+        int wordNumber = PlayerPrefs.GetInt("words");
+        wordText.text = GameManager.Instance.dataList.DataSet[wordNumber].EN_Name;
+        englishDescription.text = "English Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].EN_Definition;
+        spanishDescription.text = "Spanish Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].SP_Definition;
         phoenPanel.SetActive(true);
         phonePanelAnimator.SetBool("IsOpen", true);
     }

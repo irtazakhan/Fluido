@@ -7,7 +7,8 @@ public class AIController : MonoBehaviour
 {
     [SerializeField] TMP_Text messageText;
     [SerializeField] string message;
-    
+
+    [SerializeField] int wordIndex;
 
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
@@ -22,6 +23,7 @@ public class AIController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            PlayerPrefs.SetInt("words", wordIndex);
             Interact(true);
             GameManager.Instance.Instance_TTS.Speak(dialogue.sentences[0]);
         }
