@@ -41,13 +41,13 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         fadeAnimator.SetBool("FadeIn", true);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Map");
     }
 
     IEnumerator LoadMainScene()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Map");
     }
 
     public void QuitGame()
