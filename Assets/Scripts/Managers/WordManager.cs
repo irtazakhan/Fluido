@@ -231,8 +231,9 @@ public class WordManager : MonoBehaviour
 
         if(correctLetter == answerText.Length)
         {
-            int num= PlayerPrefs.GetInt("words");      
-            PlayerPrefs.SetInt("words", num+1);
+            int num= PlayerPrefs.GetInt("WordsLeanerd");
+            PlayerPrefs.SetInt("WordsLeanerd", num+1);
+            GameManager.Instance.Instance_UI.UpdateLearnedWordCount();
             StartCoroutine(CorrectAnswerRoutine());
         }
         else

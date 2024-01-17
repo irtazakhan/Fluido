@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] TMP_Text wordText;
     [SerializeField] TMP_Text englishDescription;
     [SerializeField] TMP_Text spanishDescription;
+    [SerializeField] TMP_Text learnedandTotalWordsText;
     [SerializeField] GameObject allOptionPanel;
     [SerializeField] GameObject historyPanel;
     [SerializeField] GameObject wordlePanel;
@@ -36,10 +37,17 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         SoundManager.ins.PlayMusic("Battle");
+
+        int noOfNPC = FindObjectsOfType<AIController>().Length;
+        PlayerPrefs.SetInt("WordsLeanerd", 0);
+        int learnedWords = PlayerPrefs.GetInt("WordsLeanerd");
+
+        learnedandTotalWordsText.text = learnedWords.ToString() + " / " + noOfNPC.ToString(); 
+
         //wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
 
         //Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
-       //if (wordSprite != null)
+        //if (wordSprite != null)
         {
            // wordPicture.sprite = wordSprite;
         }
@@ -162,6 +170,14 @@ public class UIManager : MonoBehaviour
             genderPanel.SetActive(true);
             genderPanelAnimator.SetBool("Open", true);
         } 
+    }
+
+    public void UpdateLearnedWordCount()
+    {
+        int noOfNPC = FindObjectsOfType<AIController>().Length;
+        int learnedWords = PlayerPrefs.GetInt("WordsLeanerd");
+
+        learnedandTotalWordsText.text = learnedWords.ToString() + " / " + noOfNPC.ToString();
     }
 
     public void CloseAllPanel()
