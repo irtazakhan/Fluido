@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+using UnityEngine.UI;
+
+
 public class AIController : MonoBehaviour
 {
     [SerializeField] TMP_Text messageText;
@@ -10,8 +13,13 @@ public class AIController : MonoBehaviour
 
     [SerializeField] int wordIndex;
 
+    [SerializeField] GameObject interactButton;
+    [SerializeField] GameObject player;
+
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
+
+    private bool isInteractable=true;
 
     private void Start()
     {
@@ -22,9 +30,14 @@ public class AIController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerPrefs.SetInt("words", wordIndex);
-            Interact(true);
-            GameManager.Instance.Instance_TTS.Speak(dialogue.sentences[0]);
+            if(isInteractable)
+            {
+                PlayerPrefs.SetInt("words", wordIndex);
+                interactButton.SetActive(true);
+                interactButton.GetComponent<Button>().onClick.RemoveAllListeners();
+                interactButton.GetComponent<Button>().onClick.AddListener(Interact);
+                player = collision.gameObject;
+            }
         }
     }
 
@@ -32,22 +45,16 @@ public class AIController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Interact(false);
+            interactButton.SetActive(false);
         }
     }
 
-    private void Interact(bool show)
+
+    private void Interact()
     {
-        // Start Dialgoue
-        if(show)
-        {
-            dialogueManager.StartDialogue(dialogue);
-        }
-        else
-        {
-            dialogueManager.EndDialogue(show);
-           
-        }
-       
+        GameManager.Instance.Instance_TTS.Speak(GameManager.Instance.dataList.DataSet[wordIndex].Audio);
+        player.GetComponent<PlayerMovement>().canMove = false;
+        dialogueManager.StartDialogue(dialogue);
+        isInteractable = false;
     }
 }

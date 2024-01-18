@@ -51,6 +51,12 @@ public class PlayerMovement : MonoBehaviour
                 UpdateAnimator(Vector3.zero);
             }
         }
+        else
+        {
+            isDragging = false;
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 0);
+        }
 
     }
     void UpdateAnimator(Vector3 direction)

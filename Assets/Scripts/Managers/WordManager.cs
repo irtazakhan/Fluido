@@ -43,6 +43,7 @@ public class WordManager : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         uiManager.ClosePhonePanel();
         uiManager.OpenMainPanel();
+        FindObjectOfType<PlayerMovement>().canMove = true;
         wordGenderManager.ResetGenderWheel();
         foreach (Transform child in historyPanel.transform)
         {
