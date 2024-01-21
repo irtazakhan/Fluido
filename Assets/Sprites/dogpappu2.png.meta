@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd182b18d974ca748b9070c62d70ff9d
+guid: 07b68ff116ee6704da6aadd67b5b4bcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 240
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog_pappu_0
+      name: dogpappu2_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 943
-        width: 460
-        height: 322
+        x: 0
+        y: 384
+        width: 384
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17ca3830e343744cbffa9c308baf847
-      internalID: 1452980005
+      spriteID: ca34c75d4122cb646843483ac2932c9d
+      internalID: -1233559142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_pappu_1
+      name: dogpappu2_1
       rect:
         serializedVersion: 2
-        x: 115
-        y: 207
-        width: 460
-        height: 299
+        x: 0
+        y: 0
+        width: 384
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c244d39da0f9047a7e96a3f10a2710
-      internalID: -1306821885
+      spriteID: 16516724df8798c4e8a960a03c3b500d
+      internalID: -1985195131
       vertices: []
       indices: 
       edges: []
@@ -188,8 +188,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dog_pappu_0: 1452980005
-      dog_pappu_1: -1306821885
+      dogpappu2_0: -1233559142
+      dogpappu2_1: -1985195131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
