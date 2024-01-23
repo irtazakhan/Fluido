@@ -100,8 +100,8 @@ public class WordManager : MonoBehaviour
         }
         else if (answerText.Length >= 10)
         {
-            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(35, 35);
-            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(17, 17);
+            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(30, 30);
+            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(14, 14);
         }
 
         for (int i = 0; i < inputBoxList.Count; i++)
@@ -119,6 +119,15 @@ public class WordManager : MonoBehaviour
         foreach (Transform child in lastInputparent.transform)
         {
             Destroy(child.gameObject);
+        }
+
+        if (answerText.Length < 10)
+        {
+            lastInputparent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(40, 40);
+        }
+        else if (answerText.Length >= 10)
+        {
+            lastInputparent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(29, 29);
         }
 
         for (int i = 0; i < inputBoxList.Count; i++)
@@ -152,7 +161,7 @@ public class WordManager : MonoBehaviour
         }
         else if(answerText.Length>=10)
         {
-            inputBoxParent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(35, 35);
+            inputBoxParent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(30, 30);
         }
 
         for (int i = 0; i < answerText.Length; i++)
