@@ -24,9 +24,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] Animator genderPanelAnimator;
     [SerializeField] Animator wordlePanelAnimator;
     [SerializeField] Animator phonePanelAnimator;
+    [SerializeField] Animator allWordsPanelAnimator;
 
     [SerializeField] Image wordPicture;
     [SerializeField] Sprite blank;
+
+
     #endregion
 
     #region PUBLIC VARIABLES
@@ -178,6 +181,11 @@ public class UIManager : MonoBehaviour
         int learnedWords = PlayerPrefs.GetInt("WordsLeanerd");
 
         learnedandTotalWordsText.text = learnedWords.ToString() + " / " + noOfNPC.ToString();
+
+        if(learnedWords==noOfNPC)
+        {
+            allWordsPanelAnimator.SetTrigger("Open");
+        }
     }
 
     public void CloseAllPanel()
