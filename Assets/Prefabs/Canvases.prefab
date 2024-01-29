@@ -615,7 +615,7 @@ MonoBehaviour:
   wordlePanelAnimator: {fileID: 6274625787734549810}
   phonePanelAnimator: {fileID: 1361550494112141216}
   allWordsPanelAnimator: {fileID: 4350309075155345574}
-  wordPicture: {fileID: 0}
+  wordPicture: {fileID: 5833565710156340178}
   blank: {fileID: 21300000, guid: ac79df4bc51ccdf499804d0520ffa896, type: 3}
   genderCorrectTimes: 0
 --- !u!1 &2818118349930578787
@@ -2701,6 +2701,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1292231642330709067, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 234.2818
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292231642330709067, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 224.6528
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292231642330709067, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.2761
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292231642330709067, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 176.97356
+      objectReference: {fileID: 0}
     - target: {fileID: 1405679172639132050, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2967,7 +2983,7 @@ PrefabInstance:
       objectReference: {fileID: 3747598259916703787}
     - target: {fileID: 4134892690086592099, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4138573054078099247, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3573,7 +3589,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 557089906993491462, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+    - {fileID: 5132852675868075600, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
@@ -3583,7 +3601,45 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3589211521990341786, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1361550494112141216}
+    - targetCorrespondingSourceObject: {fileID: 4134892690086592099, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5833565710156340178}
   m_SourcePrefab: {fileID: 100100000, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+--- !u!1 &267842753664632304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4134892690086592099, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}
+  m_PrefabInstance: {fileID: 4239443534030027667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5833565710156340178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267842753664632304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!224 &557573045733306967 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4425176779533814212, guid: ac90c09ee309c9341990f0988bb78b7c, type: 3}

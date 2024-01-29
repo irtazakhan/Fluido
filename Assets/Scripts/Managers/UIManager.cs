@@ -50,14 +50,14 @@ public class UIManager : MonoBehaviour
 
         //wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
 
-        //Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
-        //if (wordSprite != null)
+        Sprite wordSprite= Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+        if (wordSprite != null)
         {
-           // wordPicture.sprite = wordSprite;
+           wordPicture.sprite = wordSprite;
         }
-       // else
+        else
         {
-           // wordPicture.sprite = blank;
+           wordPicture.sprite = blank;
         }       
     }
     #endregion
@@ -71,14 +71,14 @@ public class UIManager : MonoBehaviour
 
         //wordText.text = GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].EN_Name;
        
-        //Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
-       // if (wordSprite != null)
+        Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+        if (wordSprite != null)
         {
-            //wordPicture.sprite = wordSprite;
+            wordPicture.sprite = wordSprite;
         }
-       // else
+         else
         {
-           // wordPicture.sprite = blank;
+           wordPicture.sprite = blank;
         }
     }
 
@@ -132,6 +132,16 @@ public class UIManager : MonoBehaviour
         wordText.text = GameManager.Instance.dataList.DataSet[wordNumber].EN_Name;
         englishDescription.text = "English Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].EN_Definition;
         spanishDescription.text = "Spanish Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].SP_Definition;
+        Sprite wordSprite = Resources.Load<Sprite>("Sprites/" + GameManager.Instance.dataList.DataSet[PlayerPrefs.GetInt("words")].Sprite);
+        if (wordSprite != null)
+        {
+            wordPicture.sprite = wordSprite;
+        }
+        else
+        {
+            wordPicture.sprite = blank;
+        }
+       
         phoenPanel.SetActive(true);
         phonePanelAnimator.SetBool("IsOpen", true);
        

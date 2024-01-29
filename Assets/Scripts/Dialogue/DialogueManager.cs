@@ -97,8 +97,7 @@ public class DialogueManager : MonoBehaviour
        
         if (interact)
 		{
-			Debug.Log("End:" + interact);
-
+			
 			StartCoroutine(ShowPhonePanelRoutine());
         }
 		
