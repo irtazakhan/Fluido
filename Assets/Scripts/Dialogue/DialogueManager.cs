@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
 	public Animator animator;
 	public AudioSource aS;
 
+	public bool interact;
 	void Awake()
 	{
 		sentences = new Queue<string>();
@@ -28,30 +29,30 @@ public class DialogueManager : MonoBehaviour
 	}
 
 
-	public void StartDialogue(Dialogue dialogue, bool interact = true)
+	public void StartDialogue(Dialogue dialogue, bool interactaction = true)
 	{
-
 		isDialogueEnded = false;
 		nameText.text = dialogue.name;
 		animator.SetBool("IsOpen", true);
 		sentences.Clear();
-
+		interact = interactaction;
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
 		}
 
-		DisplayNextSentence(interact);
+		DisplayNextSentence();
 	}
 
-	public void DisplayNextSentence(bool interact=true)
+	public void DisplayNextSentence()
 	{
 		if(isSentenceEnded)
         {
 			
 			if (sentences.Count == 0)
 			{
-				EndDialogue(interact);
+               
+                EndDialogue();
 				return;
 			}
 
@@ -85,7 +86,7 @@ public class DialogueManager : MonoBehaviour
 		isSentenceEnded = true;
 	}
 
-	public void EndDialogue(bool interaction)
+	public void EndDialogue()
 	{
 		if(sentences.Count>0)
         {
@@ -93,9 +94,12 @@ public class DialogueManager : MonoBehaviour
         }
 
 		animator.SetBool("IsOpen", false);
-		if(interaction)
+       
+        if (interact)
 		{
-            StartCoroutine(ShowPhonePanelRoutine());
+			Debug.Log("End:" + interact);
+
+			StartCoroutine(ShowPhonePanelRoutine());
         }
 		
 		isSentenceEnded = true;
@@ -104,7 +108,8 @@ public class DialogueManager : MonoBehaviour
 
 	IEnumerator ShowPhonePanelRoutine()
 	{
-		yield return new WaitForSeconds(0.5f);
+        
+        yield return new WaitForSeconds(0.5f);
         GameManager.Instance.Instance_UI.OpenPhonePanel();
     }
 }

@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 6c8d1f15b460a7b4983527e3f981f7a4
   - enabled: 1
-    path: Assets/Scenes/Map.unity
+    path: Assets/Scenes/Main.unity
     guid: 4311c29941131dc40a3f1c8b7045c7a7
-  - enabled: 1
-    path: Assets/Scenes/EndScene.unity
-    guid: a3c91cc88f597db498c0f899b6aceda7
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a96d497f3de22cb4a8f262e95b089a58, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 7095a9457e9bb3b4e8e68bbc9b1299e7, type: 2}

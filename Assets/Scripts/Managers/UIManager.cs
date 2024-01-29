@@ -134,6 +134,7 @@ public class UIManager : MonoBehaviour
         spanishDescription.text = "Spanish Definition: " + GameManager.Instance.dataList.DataSet[wordNumber].SP_Definition;
         phoenPanel.SetActive(true);
         phonePanelAnimator.SetBool("IsOpen", true);
+       
     }
 
     public void ClosePhonePanel()

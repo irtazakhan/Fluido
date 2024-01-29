@@ -54,7 +54,7 @@ public class AIController : MonoBehaviour
     {
         GameManager.Instance.Instance_TTS.Speak(GameManager.Instance.dataList.DataSet[wordIndex].Audio);
         player.GetComponent<PlayerMovement>().canMove = false;
-        dialogueManager.StartDialogue(dialogue);
+        dialogueManager.StartDialogue(dialogue,true);
         isInteractable = false;
     }
 }
