@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 354625699510667483, guid: 76b51bc383c6f2c42b2c99946f56493c, type: 3}
       propertyPath: moveSpeed
-      value: 2.5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 1599367637725033490, guid: 76b51bc383c6f2c42b2c99946f56493c, type: 3}
       propertyPath: m_Name
@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Snazzlefluff wobblequack, zibberzap!
+      value: Es***la
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -784,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Quibberquack snazzlefluff, zibberzap!
+      value: Din**ro
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -894,7 +894,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Blibberblip zoodlewham, zibberwobble!
+      value: B**
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -1256,7 +1256,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Zibberflop blorptwizzle, gloopnoodle!
+      value: Tie**da
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -1434,7 +1434,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Zizzlefluff, snazzlewobble zibberzap!
+      value: G**o
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -1560,7 +1560,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Plopbleep, wobblysnort snazzleflop!
+      value: Rest****nte
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2218,7 +2218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721027235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91209, y: -24.93441, z: -10}
+  m_LocalPosition: {x: -0.91207427, y: -24.930798, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2437,7 +2437,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Snorkleblip zibberflap, jibberblorp!
+      value: Pe**o
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2547,7 +2547,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Quibberquack, flibberjibber zizzleflap!
+      value: Co**e
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2747,7 +2747,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Zobblefizzle, jibberflap wiggledoo!
+      value: A**a
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2925,30 +2925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 253941135051676730, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 553287296709131819, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1721027237}
-    - target: {fileID: 2158954399055721356, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2158954399055721356, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2158954399055721356, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2158954399055721356, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2878191098080242826, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2993,57 +2973,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3093680511094544847, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3093680511094544847, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3093680511094544847, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3093680511094544847, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3805811539457257209, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_Name
       value: Canvases
-      objectReference: {fileID: 0}
-    - target: {fileID: 4927906922086994348, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5413955082602920722, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -15.716309
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732277061622641387, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732277061622641387, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732277061622641387, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732277061622641387, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732277061622641387, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 63
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732277061622641387, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -297
       objectReference: {fileID: 0}
     - target: {fileID: 7432403100476790352, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3053,18 +2985,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 967325915}
-    - target: {fileID: 8454496322343047102, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656926926083199660, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8680809306690416540, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -62.02527
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3160,7 +3080,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Gobbleflop zippityzorp, zoodlewham!
+      value: Ca*a
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled

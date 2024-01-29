@@ -52,6 +52,7 @@ public class AIController : MonoBehaviour
 
     private void Interact()
     {
+        SoundManager.ins.PauseAndResumeMusic(3);
         GameManager.Instance.Instance_TTS.Speak(GameManager.Instance.dataList.DataSet[wordIndex].Audio);
         player.GetComponent<PlayerMovement>().canMove = false;
         dialogueManager.StartDialogue(dialogue,true);
