@@ -8,12 +8,9 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
 
-    private void Update()
+    private void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            dialogueManager.StartDialogue(dialogue);
-        }
+        dialogueManager.StartDialogue(dialogue,false);
     }
 
 }

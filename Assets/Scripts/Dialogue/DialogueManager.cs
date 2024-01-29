@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
 	public Animator animator;
 	public AudioSource aS;
 
-	void Start()
+	void Awake()
 	{
 		sentences = new Queue<string>();
 		isDialogueEnded = false;
@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
 	}
 
 
-	public void StartDialogue(Dialogue dialogue)
+	public void StartDialogue(Dialogue dialogue, bool interact = true)
 	{
 
 		isDialogueEnded = false;
@@ -41,16 +41,17 @@ public class DialogueManager : MonoBehaviour
 			sentences.Enqueue(sentence);
 		}
 
-		DisplayNextSentence();
+		DisplayNextSentence(interact);
 	}
 
-	public void DisplayNextSentence()
+	public void DisplayNextSentence(bool interact=true)
 	{
 		if(isSentenceEnded)
         {
+			
 			if (sentences.Count == 0)
 			{
-				EndDialogue(true);
+				EndDialogue(interact);
 				return;
 			}
 
@@ -79,7 +80,7 @@ public class DialogueManager : MonoBehaviour
 		foreach (char letter in sentence.ToCharArray())
 		{			
 			dialogueText.text += letter;
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.05f);
 		}
 		isSentenceEnded = true;
 	}
