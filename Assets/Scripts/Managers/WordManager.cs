@@ -40,6 +40,7 @@ public class WordManager : MonoBehaviour
         
         AddWordToHistoryList();
         wordlePanelAnimator.SetBool("Open", false);
+        uiManager.DisableInteractButton();
         yield return new WaitForSeconds(0.7f);
         uiManager.ClosePhonePanel();
         uiManager.OpenMainPanel();

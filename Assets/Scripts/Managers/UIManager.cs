@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject genderPanel;
     [SerializeField] GameObject phoenPanel;
     [SerializeField] GameObject genderImageObject;
+    [SerializeField] GameObject interactButton;
     [SerializeField] Animator historyPanelAnimator;
     [SerializeField] Animator analisePanelAnimator;
     [SerializeField] Animator genderPanelAnimator;
@@ -184,8 +185,14 @@ public class UIManager : MonoBehaviour
 
         if(learnedWords==noOfNPC)
         {
-            allWordsPanelAnimator.SetTrigger("Open");
+            StartCoroutine(ShowAllWordsLearnedPanel());
         }
+    }
+
+    IEnumerator ShowAllWordsLearnedPanel()
+    {
+        yield return new WaitForSeconds(0.5f);
+        allWordsPanelAnimator.SetTrigger("Open");
     }
 
     public void CloseAllPanel()
@@ -196,5 +203,11 @@ public class UIManager : MonoBehaviour
         analyzePanel.SetActive(false);
         genderPanel.SetActive(false);
     }
+
+    public void DisableInteractButton()
+    {
+        interactButton.SetActive(false);    
+    }
+
     #endregion
 }

@@ -50,16 +50,16 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
-    public void LoadEndScene()
+    public void LoadStartScene()
     {
         fadeAnimator.SetBool("FadeIn", true);
-        StartCoroutine(LoadEndSceneRoutine());
+        StartCoroutine(LoadStartSceneRoutine());
     }
 
-    IEnumerator LoadEndSceneRoutine()
+    IEnumerator LoadStartSceneRoutine()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("EndScene");
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void QuitGame()
