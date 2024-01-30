@@ -279,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Es***la
+      value: La es**ela es grande
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -717,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Din**ro
+      value: No tengo di**ro
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -827,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: B**
+      value: El b*r es el mejor en la ciudad
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -1189,7 +1189,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Tie**da
+      value: Donde esta la ti**da?
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -1367,7 +1367,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: G**o
+      value: Que bonito g**o
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -1493,7 +1493,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Rest****nte
+      value: Ese es el rest***ante nuevo
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2125,7 +2125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721027235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91207427, y: -24.930798, z: -10}
+  m_LocalPosition: {x: -0.91209, y: -24.93441, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2344,7 +2344,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Pe**o
+      value: Cuidado con el pe**o
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2454,7 +2454,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Co**e
+      value: Subete al c**he
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2654,7 +2654,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: A**a
+      value: Un vaso de a**a, por favor
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
@@ -2836,6 +2836,30 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1721027237}
+    - target: {fileID: 821068597851187022, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f98a366772e467429beedd86b18b7f2, type: 3}
+    - target: {fileID: 1262083245430259048, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 58.4976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262083245430259048, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 60.50259
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340986888187168029, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -826.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340986888187168029, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -870.97485
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720271837345637842, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -55
+      objectReference: {fileID: 0}
     - target: {fileID: 2878191098080242826, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2896,9 +2920,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3539243434053107560, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f98a366772e467429beedd86b18b7f2, type: 3}
     - target: {fileID: 3805811539457257209, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_Name
       value: Canvases
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550218833539371859, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214763872897079989, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -822.4386
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214763872897079989, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -869.9284
       objectReference: {fileID: 0}
     - target: {fileID: 7432403100476790352, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2908,6 +2948,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 967325915}
+    - target: {fileID: 9165250783370477877, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150.2146
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165250783370477877, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 51.9495
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165250783370477877, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165250783370477877, guid: 676c3ba7d3c03f141ad5973cc419882c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3003,7 +3059,7 @@ PrefabInstance:
       objectReference: {fileID: 967325915}
     - target: {fileID: 7583979161601748096, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Ca*a
+      value: Vamos a tu c**a
       objectReference: {fileID: 0}
     - target: {fileID: 8324030272135734621, guid: 9aedb6c6acf626744add463baa8fd378, type: 3}
       propertyPath: m_Enabled
