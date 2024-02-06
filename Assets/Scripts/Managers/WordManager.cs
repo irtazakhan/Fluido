@@ -101,8 +101,8 @@ public class WordManager : MonoBehaviour
         }
         else if (answerText.Length >= 10)
         {
-            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(30, 30);
-            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(14, 14);
+            historyPanel.GetComponent<GridLayoutGroup>().cellSize = new Vector2(28, 28);
+            historyPanel.GetComponent<GridLayoutGroup>().spacing = new Vector2(13, 13);
         }
 
         for (int i = 0; i < inputBoxList.Count; i++)
@@ -128,7 +128,7 @@ public class WordManager : MonoBehaviour
         }
         else if (answerText.Length >= 10)
         {
-            lastInputparent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(29, 29);
+            lastInputparent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(27, 27);
         }
 
         for (int i = 0; i < inputBoxList.Count; i++)
@@ -159,10 +159,12 @@ public class WordManager : MonoBehaviour
         if(answerText.Length<10)
         {
             inputBoxParent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(48, 48);
+            inputBoxParent.GetComponent<GridLayoutGroup>().spacing = new Vector2(17, 17);
         }
         else if(answerText.Length>=10)
         {
             inputBoxParent.GetComponent<GridLayoutGroup>().cellSize = new Vector2(30, 30);
+            inputBoxParent.GetComponent<GridLayoutGroup>().spacing = new Vector2(15, 15);
         }
 
         for (int i = 0; i < answerText.Length; i++)
